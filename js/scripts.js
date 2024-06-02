@@ -6,3 +6,4 @@ document.getElementById("contactForm").addEventListener("submit", function(event
     }
     form.classList.add("was-validated");
 });
+
