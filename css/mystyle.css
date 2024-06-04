@@ -8,6 +8,7 @@
 .thumbGallery:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   opacity: 0.9;
+  scale: 1.05;
 }
 
 .card {
@@ -23,8 +24,8 @@
 
 .cardTitle {
   display: flex;
-  padding-top: 5%;
   font-size: 1.5rem;
+  margin-top: auto;
 }
 
 .custom-modal-size {
@@ -32,10 +33,15 @@
   max-height: 100%;
 }
 
-.gitChessCustomModal{
-  max-width: fit-content;
+.custom-modal-size-small{
+  max-width: max-content;
 }
 
-.gitChessCustomModal img{
+.custom-modal-size-small img{
   height: 30rem;
+}
+
+.gitTitleLink{
+  color: black;
+  margin-left: auto;
 }
