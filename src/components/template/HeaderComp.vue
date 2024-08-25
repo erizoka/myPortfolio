@@ -2,35 +2,71 @@
     <header class="header">
         <span class="title">
             <a><router-link to="/">Erica Esteves</router-link></a>
-        </span>
-        <div class="header-container">
-            <button class="menu-toggle" @click="toggleMenu"><icon :icon="['fas', 'bars']" /></button>
-            <nav class="menu" :class="{ 'menu-active': isMenuOpen }">
-                <ul>
-                    <li><router-link to="/">Início</router-link></li>
-                    <li><router-link to="/summary">Resumo</router-link></li>
-                    <li><router-link to="/projects">Projetos</router-link></li>
-                    <li><router-link to="contact">Contato</router-link></li>
-                </ul>
-            </nav>
-        </div>
+        </span>        
+        <nav v-if="!isMobile" class="menu">
+        <ul>
+            <li><router-link to="/">Início</router-link></li>
+            <li><router-link to="/summary">Resumo</router-link></li>
+            <li><router-link to="/projects">Projetos</router-link></li>
+            <li><router-link to="/contact">Contato</router-link></li>
+        </ul>
+        </nav>
+        
+        <v-menu v-else :close-on-content-click="false" offset-y>
+            <template v-slot:activator="{ props }">
+                <v-btn variant="text" class="mr-2" rounded="xl" v-bind="props">
+                    <icon :icon="['fas', 'bars']" />
+                </v-btn>
+            </template>
+            <v-list>
+                <v-list-item v-for="(item, index) in menuItems" :key="index" @click="navigate(item.path)">
+                    <v-list-item-title>{{ item.title }}</v-list-item-title>
+                </v-list-item>
+            </v-list>
+        </v-menu>
     </header>
 </template>
 
 <script>
+import { ref, onMounted, onUnmounted } from 'vue';
+import { useRouter } from 'vue-router';
 
 export default {
-    data(){
-        return {
-            isMenuOpen: false
-        }
-    },
-    methods: {
-        toggleMenu() {
-            this.isMenuOpen = !this.isMenuOpen;
-        }
-    }
-}
+  setup() {
+    const isMobile = ref(false);
+    const menuItems = ref([
+      { title: 'Início', path: '/' },
+      { title: 'Resumo', path: '/summary' },
+      { title: 'Projetos', path: '/projects' },
+      { title: 'Contato', path: '/contact' }
+    ]);
+
+    const router = useRouter();
+
+    const checkWindowSize = () => {
+      isMobile.value = window.innerWidth <= 768;
+    };
+
+    const navigate = (path) => {
+      router.push(path);
+    };
+
+    onMounted(() => {
+      checkWindowSize();
+      window.addEventListener('resize', checkWindowSize);
+    });
+
+    onUnmounted(() => {
+      window.removeEventListener('resize', checkWindowSize);
+    });
+
+    return {
+      isMobile,
+      menuItems,
+      navigate
+    };
+  }
+};
 </script>
 
 <style scoped>
@@ -63,10 +99,6 @@ export default {
         font-weight: bolder;
     }
 
-    .header-container {
-        width: 30%;
-    }
-
     .menu {
        margin-right: 60px;
     }
@@ -97,82 +129,12 @@ export default {
         font-size: 1.1rem;
     }
 
-    .menu-toggle {
-        display: none;
-        font-size: 1.5em;
-        background: none;
-        border: none;
-    }
-
     @media (max-width: 768px) {
-        @keyframes slideInDown {
-            0% {
-                transform: translateY(-10%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
         .title {
             margin-left: 10px;
             padding-left: 5px;
         }
 
-        .title a {
-            font-size: medium;
-        }
-
-        .header-container {
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            margin-right: 0;
-            background-color: #ffffff;
-            z-index: 1000;
-            transform: translateY(-100%);
-            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
-            border-radius: 8px;
-        }
-        
-        .menu.menu-active {
-            display: block;
-            width: max-content;
-            animation: slideInDown 0.3s ease-out forwards;
-        }
-        
-        .menu ul {
-            flex-direction: column;
-            font-size: 10px;
-            margin: 0;
-            padding: 1px;
-        }
-        
-        .menu li {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 15px;
-            justify-content: center;
-            align-items: center;
-            width: 90px;
-        }
-
-        .menu a {
-            font-size: 15px;
-            display: block;
-        }
-
-        .menu-toggle {
-            display: block;
-        }
+        .title a { font-size: medium; }
     }
-
 </style>
