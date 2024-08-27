@@ -1,5 +1,5 @@
 <template>
-    <div class="home-title animate__animated animate__fadeInUp">
+    <div class="home-title animate__animated animate__fadeInUp animate__slow">
         <span>Web < &middot; Development &middot; > Mobile</span>
         <h3>Possui um projeto?</h3>
         <h1>Posso ajudar a torna-lo real</h1>

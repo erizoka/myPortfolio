@@ -1,5 +1,5 @@
 <template>
-    <div class="home-about animate__animated animate__fadeInUp">
+    <div class="home-about animate__animated animate__fadeInUp animate__delay-2s">
         <h1>Sobre mim</h1>
         <h3>Meu nome é Erica e eu sou web e mobile developer.</h3>
         <p>Busco constantemente o aprimoramento em tecnologia e programação. 

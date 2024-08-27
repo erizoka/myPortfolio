@@ -1,5 +1,5 @@
 <template>
-    <div class="home-profile animate__animated animate__fadeInUp">
+    <div class="home-profile animate__animated animate__fadeInUp animate__delay-1s">
         <SvgDots class="dots1" />
         <SvgDots class="dots2"/>
         <div class="profile-img">

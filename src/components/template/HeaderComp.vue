@@ -4,12 +4,12 @@
             <a><router-link to="/">Erica Esteves</router-link></a>
         </span>        
         <nav v-if="!isMobile" class="menu">
-        <ul>
-            <li><router-link to="/">Início</router-link></li>
-            <li><router-link to="/summary">Resumo</router-link></li>
-            <li><router-link to="/projects">Projetos</router-link></li>
-            <li><router-link to="/contact">Contato</router-link></li>
-        </ul>
+            <ul>
+                <li><router-link to="/">Início</router-link></li>
+                <li><router-link to="/summary">Resumo</router-link></li>
+                <li><router-link to="/projects">Projetos</router-link></li>
+                <li><router-link to="/contact">Contato</router-link></li>
+            </ul>
         </nav>
         
         <v-menu v-else :close-on-content-click="false" offset-y>
@@ -89,7 +89,11 @@ export default {
         justify-content: center;
         align-items: center;
     }
-
+    
+    .title a:hover{
+        filter: brightness(150%);
+    }
+    
     .title a {
         width: 100%;
         text-decoration: none;
@@ -97,6 +101,7 @@ export default {
         font-family: "Plus Jakarta Sans", 'Times New Roman', Times, serif;
         color: #1E30F3;
         font-weight: bolder;
+        transition: filter 0.5s ease;
     }
 
     .menu {

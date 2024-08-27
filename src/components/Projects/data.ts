@@ -38,7 +38,7 @@ const projectsData = [
         description: 
         `Sistema de gerenciamento de pedido de uma pizzaria (fictícia), 
         implantado sistema de autenticação e integração com app para cadastro dos pedidos pelo garçom. 
-        Projeito feito em linguagem NodeJS, TypeScript e React`,
+        Projeito feito em linguagem NodeJS, TypeScript e React.`,
         thumbImg: require('@/assets/projects-gallery/golden-pizza-desktop/thumb-gp-desktop.png'),
         alt: 'Preview da página de login',
         git: 'https://github.com/erizoka/Golden-Pizzaria',
@@ -67,18 +67,86 @@ const projectsData = [
             img5: require('@/assets/projects-gallery/golden-pizza-mobile/finalizando-pedido.jpg')
         }
     },
+    {
+        title: 'plann.er',
+        description: 
+        `Planejador de viagem usando React, Vite, Tailwind e Typescript, com gerenciamento de atividades por dia e horário 
+        e armazenamento de links externos. Convidados recebem notificação por email e é possível verificar 
+        o aceite nos detalhes da viagem. Projeto feito em evento da RocketSeat, somente frontend.`,
+        thumbImg: require('@/assets/projects-gallery/trip-planner/thumb.png'),
+        alt: 'Tela inicial do Planejador de viagem',
+        git: 'https://github.com/erizoka/trip-planner',
+        carousel: {
+            img1: require('@/assets/projects-gallery/trip-planner/index.png'),
+            img2: require('@/assets/projects-gallery/trip-planner/data-picker.png'),
+            img3: require('@/assets/projects-gallery/trip-planner/convidar-email.png'),
+            img4: require('@/assets/projects-gallery/trip-planner/confirmar-viagem.png'),
+            img5: require('@/assets/projects-gallery/trip-planner/detalhes-viagem.png'),
+            img6: require('@/assets/projects-gallery/trip-planner/add-atividade.png')
+        }
+    },
+    {
+        title: 'Knowlegde',
+        description: 
+        `Base de conhecimento - projeto feito no curso Vue 2 da C3der, onde os administradores cadastram
+        artigos, categorias e usuários. Somente usuários cadastrados podem acessar,
+        tela inicial mostra o dashboard da visão geral e categorias no menu lateral. Backend em JavaScript, 
+        Knex e Node v12, frontend com Vue 2, Vue Router, Vuex e BootstrapVue.`,
+        thumbImg: require('@/assets/projects-gallery/knowlegde/thumb.png'),
+        alt: 'Tela de dashboard',
+        git: 'https://github.com/erizoka/knowledge',
+        carousel: {
+            img1: require('@/assets/projects-gallery/knowlegde/login.png'),
+            img2: require('@/assets/projects-gallery/knowlegde/dashboard.png'),
+            img3: require('@/assets/projects-gallery/knowlegde/artigos.png'),
+            img4: require('@/assets/projects-gallery/knowlegde/artigo-aberto.png'),
+            img5: require('@/assets/projects-gallery/knowlegde/cadastro-artigo1.png'),
+            img6: require('@/assets/projects-gallery/knowlegde/cadastro-artigo2.png'),
+            img7: require('@/assets/projects-gallery/knowlegde/excluir-categoria.png')
+        }
+    },
+    {
+        title: 'STOCKTrader',
+        description: `Simulador de compra de ações em Vue 2 com Vuex onde o usuário tem um saldo inicial e 
+        pode comprar e vender ações a qualquer momento. Ao selecionar finalizar o dia, 
+        é gerado um novo valor de todas as ações
+        disponível e os dados anteriores carregam com o uso do localStorage para armazenamento em cache.`,
+        thumbImg: require('@/assets/projects-gallery/strock-trader/thumb.png'),
+        alt: 'Página inicial do simulador de compra e venda de ações',
+        git: 'https://github.com/erizoka/stock-trader',
+        carousel: {
+            img1: require('@/assets/projects-gallery/strock-trader/index.png'),
+            img2: require('@/assets/projects-gallery/strock-trader/comprar-acoes.png'),
+            img3: require('@/assets/projects-gallery/strock-trader/vender-acoes.png'),
+            img4: require('@/assets/projects-gallery/strock-trader/carregando-cache.png')
+        }
+    },
+    {
+        title: 'Film Flix',
+        description: `Projeto feito em JavaScript puro com css sem uso de framework, usando de forma experimental a API externa developer.themoviedb.org
+         página exibe as 20 produções em alta no cinema e streaming, podendo abrir os detalhes exibindo a descrição e o trailer, quando disponível,
+         e adicionando à lista de favoritos.`,
+        thumbImg: require('@/assets/projects-gallery/film-flix/thumb.png'),
+        alt: 'Página inicial exibindo filmes em alta',
+        git: 'https://github.com/erizoka/filmflix-project',
+        carousel: {
+            img1: require('@/assets/projects-gallery/film-flix/index.png'),
+            img2: require('@/assets/projects-gallery/film-flix/detalhe-filme.png'),
+            img3: require('@/assets/projects-gallery/film-flix/meus-filmes.png')
+        }
+    },
     // {
     //     title: '',
     //     description: ``,
-    //     thumbImg: '',
+    //     thumbImg: require(''),
     //     alt: '',
     //     git: '',
     //     carousel: {
-    //         img1: '',
-    //         img2: '',
-    //         img3: '',
-    //         img4: '',
-    //         img5: ''
+    //         img1: require(''),
+    //         img2: require(''),
+    //         img3: require(''),
+    //         img4: require(''),
+    //         img5: require('')
     //     }
     // },
 ]

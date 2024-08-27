@@ -4,7 +4,7 @@
         <div class="card-container">
             <v-card class="pcard animate__animated animate__zoomIn" elevation="20"
                     v-for="project in projectsData" :key="project">
-                <v-parallax :src="project.thumbImg">
+                <v-parallax :src="project.thumbImg" height="inherit">
                     <v-card-title>{{ project.title }}</v-card-title>
                     <v-card-text>{{ project.description }}</v-card-text>
                     <v-card-actions>
@@ -76,7 +76,7 @@ export default {
 
     .pcard {
         width: 450px;
-        height: 250px;
+        height: 270px;
         margin: 20px;
     }
 
@@ -88,7 +88,7 @@ export default {
 
     .v-card-text { 
         margin-top: 15px; 
-        word-break: break-all;
+        word-break: keep-all;
         color: #FFF;
     }
 
@@ -99,6 +99,7 @@ export default {
         .projects { padding: 0; width: 100%; }
         .projects h1{ font-size: 1.7rem; margin: 10px 0; }
         .card-container { width: 95%; }
-        .pcard { height: 270px; }
+        .v-card-text { margin: 0; }
+        .pcard { height: 310px; }
     }
 </style>

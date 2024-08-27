@@ -1,6 +1,6 @@
 <template>
     <div class="resume">
-        <h1 class="animate__animated animate__zoomIn">Resumo</h1>
+        <h1 class="animate__animated animate__zoomIn animate__fast">Resumo</h1>
         <ResumeFormations />
         <ResumeLanguages />
     </div>
