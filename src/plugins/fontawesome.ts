@@ -1,9 +1,35 @@
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faBars, faCode } from '@fortawesome/free-solid-svg-icons'
-import { faMessage, faEnvelope } from '@fortawesome/free-regular-svg-icons'
-import { faLinkedin, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faBars,
+  faCode,
+  faCommentDots,
+} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import {
+  faLinkedin,
+  faGithub,
+  faInstagram,
+  faJava,
+  faFlutter,
+  faJs,
+  faReact,
+  faVuejs,
+} from "@fortawesome/free-brands-svg-icons";
 
-library.add(faBars, faMessage, faLinkedin, faGithub, faInstagram, faCode, faEnvelope);
+library.add(
+  faBars,
+  faLinkedin,
+  faGithub,
+  faInstagram,
+  faCode,
+  faEnvelope,
+  faJava,
+  faFlutter,
+  faJs,
+  faReact,
+  faVuejs,
+  faCommentDots
+);
 
-export { FontAwesomeIcon }
+export { FontAwesomeIcon };
