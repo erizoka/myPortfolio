@@ -1,18 +1,19 @@
 const projectsData = [
   {
-    title: "Sônia Biscuit",
-    description: `Meu primeiro projeto foi também um portfolio para outra pessoa, 
-        que faz artesanato. Um projeto
-        originalmente com foco em HTML e CSS feito em 2019, porém fiz a
-        inclusão de um swiper em js na home para fotos em destaque.`,
-    thumbImg: require("@/assets/projects-gallery/sonia/thumb-sonia.png"),
-    alt: "Imagem do site projeto Sônia Biscuit",
-    git: null,
+    title: "XPTO Manager",
+    description: `Protótipo de Backoffice feito em Java com Spring Boot e Spring Batch para backend - ao criar usuário são disparados dois jobs.
+    VueJs para o frontend com uso de axios, vuex e vue-cookies com interface inspirada em um template Figma. Projeto de uma empresa fictícia com objetivo de gerenciar clientes
+    e usuários, com Dashboard de stats (usando gerenciamento de estado)`,
+    thumbImg: require("@/assets/projects-gallery/xpto-manager/thumb.png"),
+    alt: "Imagem index do Projeto",
+    git: "https://github.com/erizoka/xpto-manager",
     carousel: {
-      img1: require("@/assets/projects-gallery/sonia/index.png"),
-      img2: require("@/assets/projects-gallery/sonia/produtos.png"),
-      img3: require("@/assets/projects-gallery/sonia/produtos-2.png"),
-      img4: require("@/assets/projects-gallery/sonia/contato.png"),
+      img1: require("@/assets/projects-gallery/xpto-manager/index.png"),
+      img2: require("@/assets/projects-gallery/xpto-manager/dashboard.png"),
+      img3: require("@/assets/projects-gallery/xpto-manager/cadastro.png"),
+      img4: require("@/assets/projects-gallery/xpto-manager/lista-usuarios.png"),
+      img5: require("@/assets/projects-gallery/xpto-manager/editar-usuario.png"),
+      img6: require("@/assets/projects-gallery/xpto-manager/editar-usuario-1.png"),
     },
   },
   {
@@ -143,6 +144,48 @@ const projectsData = [
     },
   },
   {
+    title: "Sônia Biscuit",
+    description: `Meu primeiro projeto foi também um portfolio para outra pessoa, 
+        que faz artesanato. Um projeto
+        originalmente com foco em HTML e CSS feito em 2019, porém fiz a
+        inclusão de um swiper em js na home para fotos em destaque.`,
+    thumbImg: require("@/assets/projects-gallery/sonia/thumb-sonia.png"),
+    alt: "Imagem do site projeto Sônia Biscuit",
+    git: null,
+    carousel: {
+      img1: require("@/assets/projects-gallery/sonia/index.png"),
+      img2: require("@/assets/projects-gallery/sonia/produtos.png"),
+      img3: require("@/assets/projects-gallery/sonia/produtos-2.png"),
+      img4: require("@/assets/projects-gallery/sonia/contato.png"),
+    },
+  },
+  {
+    title: "Calculator",
+    description: `Calculadora simples desenvolvida em Fluttar | Dart com operações básicas como soma, subtração, multiplicação e divisão
+    e interface simples e intuitiva.`,
+    thumbImg: require("@/assets/projects-gallery/calculator/thumb.png"),
+    alt: "Imagem de calculadora",
+    git: "https://github.com/erizoka/calculator",
+    carousel: {
+      img1: require("@/assets/projects-gallery/calculator/print-1.png"),
+      img2: require("@/assets/projects-gallery/calculator/usage.gif"),
+    },
+  },
+  {
+    title: "Campo Minado",
+    description: `Clássico jogo de Campo Minado desenvolvido em Fluttar | Dart com interface estilo retrô, 
+    com as regras clássicas de toque em um campo para revelá-lo evitando as minas e marcando campos suspeitos.`,
+    thumbImg: require("@/assets/projects-gallery/campo-minado/thumb.png"),
+    alt: "Imagem de calculadora",
+    git: "https://github.com/erizoka/campo_minado",
+    carousel: {
+      img1: require("@/assets/projects-gallery/campo-minado/print-1.png"),
+      img2: require("@/assets/projects-gallery/campo-minado/print-2.png"),
+      img3: require("@/assets/projects-gallery/campo-minado/print-3.png"),
+      img4: require("@/assets/projects-gallery/campo-minado/print-4.png"),
+    },
+  },
+  {
     title: "STOCKTrader",
     description: `Simulador de compra de ações em Vue 2 com Vuex onde o usuário tem um saldo inicial e 
         pode comprar e vender ações a qualquer momento. Ao selecionar finalizar o dia, 
@@ -172,7 +215,20 @@ const projectsData = [
       img3: require("@/assets/projects-gallery/film-flix/meus-filmes.png"),
     },
   },
-  // {
+  {
+    title: "Pomodoro",
+    description: `Um relógio pomodoro simples desenvolvido em Flutter/Dart com controle de temporizador com opção de pausa e reset em uma
+    interface simples e intuitiva.`,
+    thumbImg: require("@/assets/projects-gallery/pomodoro/thumb.png"),
+    alt: "Imagem do projeto",
+    git: "https://github.com/erizoka/pomodoro",
+    carousel: {
+      img1: require("@/assets/projects-gallery/pomodoro/print-1.png"),
+      img2: require("@/assets/projects-gallery/pomodoro/print-2.png"),
+      img3: require("@/assets/projects-gallery/pomodoro/usage.gif"),
+    },
+  },
+  //{
   //     title: '',
   //     description: ``,
   //     thumbImg: require(''),

@@ -24,6 +24,14 @@ const resume = [
     description: `Curso prático de API Restful do zero utilizando: Swagger | JWT | JUnit 5 | Mockito | Docker | React JS`,
   },
   {
+    date: "2025 - 2025",
+    institution: "Udemy",
+    location: "Online",
+    course: "Aprenda Flutter e Desenvolva Apps Para Android e IOS",
+    description: `Curso prático completo para aprender Google Flutter e Dart para a construção de apps nativas para iOS e Android
+    com funcionalidades como o Google Maps, a câmera do dispositivo, autenticação, com projetos práticos usando interfaces responsivas e adaptativas.`,
+  },
+  {
     date: "2024 - 2024",
     institution: "Udemy",
     location: "Online",
