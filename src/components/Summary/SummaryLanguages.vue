@@ -97,6 +97,12 @@ export default {
     font-weight: 700;
 }
 
+@media (min-width: 1500px) {
+    .card {
+        width: 52%;
+    }
+}
+
 @media (max-width: 768px) {
     .card {
         width: 100%;

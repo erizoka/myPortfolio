@@ -1,6 +1,6 @@
 <template>
+    <h2 class="formacao-title">Formação</h2>
     <section class="formacao animate__animated animate__fadeInUp animate__fast">
-        <h2>Formação</h2>
         <v-card class="card-container" elevation="7" v-for="r in resume" :key="r">
             <v-card class="card">
                 <v-card-title style="color: #E21E80;">{{ r.date }}</v-card-title>
@@ -34,12 +34,13 @@ export default {
     width: 70%;
 }
 
-.formacao h2 {
+.formacao-title {
     font-size: 32px;
     font-family: "Plus Jakarta Sans";
     color: #E21E80;
-    align-self: self-start;
+    align-self: first baseline;
     margin-bottom: 30px;
+    margin-left: 200px;
     position: relative;
 }
 
@@ -61,6 +62,28 @@ export default {
     font-size: larger;
     opacity: 0.8;
     margin-left: 30px;
+}
+
+@media (min-width: 1500px) {
+    .formacao {
+        display: grid;
+        grid-template-columns: 700px 700px;
+    }
+
+    .formacao-title {
+        margin-left: 40px;
+        font-size: 37px;
+    }
+
+    .card-container {
+        padding: 30px;
+        margin: 20px;
+        height: 280px;
+    }
+
+    .card-text {
+        font-size: large;
+    }
 }
 
 @media (max-width: 768px) {
