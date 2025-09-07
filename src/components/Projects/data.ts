@@ -1,5 +1,23 @@
 const projectsData = [
   {
+    title: "Marvel Comics",
+    description: `Um app em Flutter que consome a API da Marvel para explorar personagens, quadrinhos, eventos e mais.
+       Você pode pesquisar, visualizar detalhes e favoritar seus conteúdos preferidos. Adicionado funcionalidades como pesquisa dinâmica por personagens e quadrinhos,
+       carrosséis, os favoritos são salvos em memória e layout responsivo, além de um layout responsivo.`,
+    thumbImg: require("@/assets/projects-gallery/marvel-comics/thumb.png"),
+    alt: "Tela da home do app",
+    git: "https://github.com/erizoka/marvel-comics-api",
+    carousel: {
+      img1: require("@/assets/projects-gallery/marvel-comics/splash.gif"),
+      img2: require("@/assets/projects-gallery/marvel-comics/home.png"),
+      img3: require("@/assets/projects-gallery/marvel-comics/events.png"),
+      img4: require("@/assets/projects-gallery/marvel-comics/search.gif"),
+      img5: require("@/assets/projects-gallery/marvel-comics/detail-character.png"),
+      img6: require("@/assets/projects-gallery/marvel-comics/detail-comic.png"),
+      img7: require("@/assets/projects-gallery/marvel-comics/favorites.png"),
+    },
+  },
+  {
     title: "XPTO Manager",
     description: `Protótipo de Backoffice feito em Java com Spring Boot e Spring Batch para backend - ao criar usuário são disparados dois jobs.
     VueJs para o frontend com uso de axios, vuex e vue-cookies com interface inspirada em um template Figma. Projeto de uma empresa fictícia com objetivo de gerenciar clientes

@@ -17,6 +17,14 @@ const resume = [
         VueJS incluindo suas bibliotecas e ferramentas como Vuetify, Vuex, Router Vue, Vue CLI`,
   },
   {
+    date: "2025 - 2025",
+    institution: "Udemy",
+    location: "Online",
+    course: "Vue JS 3 Completo com Composition API, Vuex & Vue Router",
+    description: `Curso prático da versão 3 do VueJS com foco em composition api, gerenciamento de estado
+    com Vuex e direcionamento de rotas com Vue Router`,
+  },
+  {
     date: "2024 - 2024",
     institution: "Udemy",
     location: "Online",
@@ -51,6 +59,15 @@ const resume = [
         Manipulação de arquivos, JPA, JDBC, Spring Boot e mais`,
   },
   {
+    date: "2025 - 2025",
+    institution: "Udemy",
+    location: "Online",
+    course: "Comunicação em Tempo Real com Spring Boot, WebSocket e Redis",
+    description: `WebSocket implementado em um mini projeto de chat
+     com Java e SpringBoot no backend e Javascript no frontend.
+    Utilizando localmente o Docker para subir, por exemplo, Redis e MongoDB.`,
+  },
+  {
     date: "2024 - 2024",
     institution: "Udemy",
     location: "Online",
@@ -69,6 +86,17 @@ const resume = [
         Estrutura condicional, Estruturas repetitivas, Vetores
         Matrizes, Testes de mesa, Depuração de programas.
         Breve introdução às linguagens: Java, C, C++, C# e Python`,
+  },
+  {
+    date: "2025 - 2025",
+    institution: "Udemy",
+    location: "Online",
+    course: "AWS para Iniciantes - Aprenda e Domine a nuvem Amazon",
+    description: `Temas abordados no curso:\n
+        conceitos fundamentais de Cloud Computing, 
+        serviços de Computação, Armazenamento e Banco de Dados, 
+        como a AWS esta estruturada e como é seu modelo de segurança
+        e escalabilidade`,
   },
   {
     date: "2019 - 2019",
