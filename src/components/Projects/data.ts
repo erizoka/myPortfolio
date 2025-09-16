@@ -3,7 +3,7 @@ const projectsData = [
     title: "Marvel Comics",
     description: `Um app em Flutter que consome a API da Marvel para explorar personagens, quadrinhos, eventos e mais.
        Você pode pesquisar, visualizar detalhes e favoritar seus conteúdos preferidos. Adicionado funcionalidades como pesquisa dinâmica por personagens e quadrinhos,
-       carrosséis, os favoritos são salvos em memória e layout responsivo, além de um layout responsivo.`,
+       carrosséis, os favoritos são salvos em memória, além de um layout responsivo.`,
     thumbImg: require("@/assets/projects-gallery/marvel-comics/thumb.png"),
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/marvel-comics-api",
@@ -21,7 +21,7 @@ const projectsData = [
     title: "XPTO Manager",
     description: `Protótipo de Backoffice feito em Java com Spring Boot e Spring Batch para backend - ao criar usuário são disparados dois jobs.
     VueJs para o frontend com uso de axios, vuex e vue-cookies com interface inspirada em um template Figma. Projeto de uma empresa fictícia com objetivo de gerenciar clientes
-    e usuários, com Dashboard de stats (usando gerenciamento de estado)`,
+    e usuários, com Dashboard de stats usando gerenciamento de estado`,
     thumbImg: require("@/assets/projects-gallery/xpto-manager/thumb.png"),
     alt: "Imagem index do Projeto",
     git: "https://github.com/erizoka/xpto-manager",
@@ -180,7 +180,7 @@ const projectsData = [
   {
     title: "Calculator",
     description: `Calculadora simples desenvolvida em Fluttar | Dart com operações básicas como soma, subtração, multiplicação e divisão
-    e interface simples e intuitiva.`,
+    e interface simples e intuitiva e um layout inspirado na calculadora padrão da Apple`,
     thumbImg: require("@/assets/projects-gallery/calculator/thumb.png"),
     alt: "Imagem de calculadora",
     git: "https://github.com/erizoka/calculator",
@@ -191,7 +191,7 @@ const projectsData = [
   },
   {
     title: "Campo Minado",
-    description: `Clássico jogo de Campo Minado desenvolvido em Fluttar | Dart com interface estilo retrô, 
+    description: `Clássico jogo de Campo Minado desenvolvido em Flutter | Dart com interface estilo retrô, 
     com as regras clássicas de toque em um campo para revelá-lo evitando as minas e marcando campos suspeitos.`,
     thumbImg: require("@/assets/projects-gallery/campo-minado/thumb.png"),
     alt: "Imagem de calculadora",
@@ -205,7 +205,7 @@ const projectsData = [
   },
   {
     title: "STOCKTrader",
-    description: `Simulador de compra de ações em Vue 2 com Vuex onde o usuário tem um saldo inicial e 
+    description: `Simulador de compra de ações em VueJS ver 2 com Vuex onde o usuário tem um saldo inicial e 
         pode comprar e vender ações a qualquer momento. Ao selecionar finalizar o dia, 
         é gerado um novo valor de todas as ações
         disponível e os dados anteriores carregam com o uso do localStorage para armazenamento em cache.`,
@@ -235,7 +235,7 @@ const projectsData = [
   },
   {
     title: "Pomodoro",
-    description: `Um relógio pomodoro simples desenvolvido em Flutter/Dart com controle de temporizador com opção de pausa e reset em uma
+    description: `Um timer com a técnica Pomodoro desenvolvido em Flutter | Dart com controle de temporizador com opção de pausa e reset em uma
     interface simples e intuitiva.`,
     thumbImg: require("@/assets/projects-gallery/pomodoro/thumb.png"),
     alt: "Imagem do projeto",

@@ -1,7 +1,7 @@
 <template>
     <div class="home-about animate__animated animate__fadeInUp animate__delay-2s">
         <h1>Sobre mim</h1>
-        <h3>Meu nome é Erica e eu sou web e mobile developer.</h3>
+        <h3>Meu nome é Erica e eu sou FullStack Developer.</h3>
         <p>
             Sou uma profissional da área de tecnologia com experiência em suporte técnico e agora atuando em
             desenvolvimento de software,
@@ -82,7 +82,7 @@
 }
 
 .social a:hover {
-    font-size: 1.2rem;
+    font-size: 2.3rem;
 }
 
 @media (max-width: 768px) {
