@@ -17,7 +17,7 @@
 <script>
 import SpringBoot from '@/assets/svg-icons/springboot.svg'
 import TypeScript from '@/assets/svg-icons/typescript.svg'
-import NextJS from '@/assets/svg-icons/nextjs.svg'
+import Dart from '@/assets/svg-icons/dart.svg'
 
 export default {
     data() {
@@ -25,12 +25,12 @@ export default {
             languages: [
                 { name: 'Java', icon: { type: 'fa', value: ['fab', 'java'] } },
                 { name: 'Spring Boot', icon: { type: 'svg', value: SpringBoot } },
-                { name: 'Typescript', icon: { type: 'svg', value: TypeScript } },
                 { name: 'Vue JS', icon: { type: 'fa', value: ['fab', 'vuejs'] } },
-                { name: 'React JS', icon: { type: 'fa', value: ['fab', 'react'] } },
                 { name: 'Flutter', icon: { type: 'fa', value: ['fab', 'flutter'] } },
+                { name: 'Dart', icon: { type: 'svg', value: Dart } },
+                { name: 'Typescript', icon: { type: 'svg', value: TypeScript } },
+                { name: 'React JS', icon: { type: 'fa', value: ['fab', 'react'] } },
                 { name: 'JavaScript', icon: { type: 'fa', value: ['fab', 'js'] } },
-                { name: 'Next JS', icon: { type: 'svg', value: NextJS } }
             ]
         }
     }
