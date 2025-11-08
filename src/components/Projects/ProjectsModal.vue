@@ -4,7 +4,7 @@
       <div v-if="isMobile" class="exit-container">
         <button class="exit" @click="closeModal">x</button>
       </div>
-      <v-carousel show-arrows="hover" height="auto" hide-delimiter-background color="purple">
+      <v-carousel :show-arrows="!isMobile ? 'hover' : undefined" height="auto" hide-delimiter-background color="purple">
         <v-carousel-item v-for="(image, index) in project.carousel" :key="index">
           <img class="carousel-img" :src="image" :alt="`Imagem ${index + 1} do projeto ${project.title}`">
         </v-carousel-item>
