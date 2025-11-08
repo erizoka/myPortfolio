@@ -1,6 +1,6 @@
 # Meu Portfólio
 
-<img src="/public/readmethumb.png" alt="Imagem da Página inicial">
+<img src="/public/readmethumb.jpeg" alt="Imagem da Página inicial">
 
 > Portfólio criado a partir de um template em Bootstrap e refatorado com Vue 3 com Typescript para exibição dos meus projetos, cursos e formação acadêmica, com formulário de contato.
 
