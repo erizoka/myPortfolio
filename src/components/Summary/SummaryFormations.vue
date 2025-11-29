@@ -91,11 +91,9 @@ export default {
         width: 100%;
     }
 
-    .formacao h2 {
+    .formacao-title {
         font-size: 25px;
-        left: 10;
-        margin-bottom: 10px;
-        margin-top: 20px;
+        margin-left: 10px;
     }
 
     .card-container {

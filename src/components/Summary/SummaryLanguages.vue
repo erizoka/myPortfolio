@@ -107,5 +107,10 @@ export default {
     .card {
         width: 100%;
     }
+
+    .card .icon {
+        font-size: small;
+        padding: 5px;
+    }
 }
 </style>
