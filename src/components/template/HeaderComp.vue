@@ -12,7 +12,7 @@
             </ul>
         </nav>
 
-        <v-menu v-else :close-on-content-click="false" offset-y>
+        <v-menu v-else :close-on-content-click="true" offset-y>
             <template v-slot:activator="{ props }">
                 <v-btn variant="text" class="mr-2" rounded="xl" v-bind="props">
                     <icon :icon="['fas', 'bars']" />
