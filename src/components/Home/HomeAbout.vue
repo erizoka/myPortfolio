@@ -1,5 +1,5 @@
 <template>
-    <div class="home-about animate__animated animate__fadeInUp animate__delay-2s">
+    <div class="home-about animate__animated animate__fadeInUp">
         <h1>Sobre mim</h1>
         <h3>Meu nome é Erica e eu sou FullStack Developer.</h3>
         <p>
@@ -85,6 +85,16 @@
     font-size: 2.3rem;
 }
 
+@media (min-width: 1800px) {
+    .home-about p {
+        width: 60%;
+    }
+
+    .animate__animated.animate__fadeInUp {
+        --animate-duration: 2s;
+    }
+}
+
 @media (max-width: 768px) {
     .home-about h1 {
         font-size: 2rem;
@@ -92,6 +102,11 @@
 
     .home-about h3 {
         width: 70%;
+        font-size: 1rem;
+    }
+
+    .home-about p {
+        font-size: 0.8rem;
     }
 }
 </style>

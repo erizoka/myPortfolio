@@ -1,5 +1,5 @@
 <template>
-    <div class="home-title animate__animated animate__fadeInUp animate__slow">
+    <div class="home-title animate__animated animate__fadeInUp">
         <span>Web < &middot; Development &middot;> Mobile</span>
         <h3>Possui um projeto?</h3>
         <h1>Posso ajudar a torna-lo real</h1>
@@ -32,9 +32,6 @@ export default {
 .home-title {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 0;
 }
 
 .home-title span {
@@ -57,7 +54,6 @@ export default {
 }
 
 .home-title h1 {
-    text-align: center;
     margin: 0;
     background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
     background-clip: text;
@@ -71,14 +67,13 @@ export default {
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .buttons button {
     border-radius: 10px;
     border: 1px solid;
     padding: 20px 50px;
-    margin: 0 30px;
+    margin: 0 5px;
     font-size: 16px;
 
     font-weight: bold;
@@ -100,8 +95,36 @@ export default {
     color: white;
 }
 
+@media (min-width: 768px) {
+    .animate__animated.animate__fadeInUp {
+        --animate-delay: 1s;
+    }
+
+    .home-title {
+        width: 40%;
+        align-self: start;
+        align-items: start;
+        margin: 2.5rem;
+    }
+
+    .buttons {
+        align-items: start;
+    }
+
+    .buttons .btn1 {
+        margin-right: 10px;
+    }
+}
+
 @media (max-width: 768px) {
+    .home-title {
+        padding: 50px 0;
+        align-items: center;
+        justify-content: center;
+    }
+
     .home-title h1 {
+        text-align: center;
         padding: 0 40px;
         font-size: 2.2rem;
     }

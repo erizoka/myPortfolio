@@ -135,6 +135,20 @@ export default {
     font-size: 1.1rem;
 }
 
+@media (min-width: 1800px) {
+    .title {
+        margin-left: 300px;
+    }
+
+    .title a {
+        width: 70%;
+    }
+
+    .menu {
+        margin-right: 300px;
+    }
+}
+
 @media (max-width: 768px) {
     .title {
         margin-left: 10px;

@@ -1,5 +1,5 @@
 <template>
-    <div class="home-profile animate__animated animate__fadeInUp animate__delay-1s">
+    <div class="home-profile animate__animated animate__fadeInUp">
         <SvgDots class="dots1" />
         <SvgDots class="dots2" />
         <div class="profile-img">
@@ -77,6 +77,12 @@ export default {
 .dots4 {
     padding-top: 6rem;
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .animate__animated.animate__fadeInUp {
+        --animate-delay: 1s;
+    }
 }
 
 @media (max-width: 768px) {

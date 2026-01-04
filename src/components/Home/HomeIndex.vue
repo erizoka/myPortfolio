@@ -1,7 +1,9 @@
 <template>
     <div class="home">
-        <HomeTitle />
-        <HomeProfile />
+        <div class="home-container">
+            <HomeTitle />
+            <HomeProfile />
+        </div>
         <HomeAbout />
     </div>
 </template>
@@ -17,11 +19,25 @@ export default {
 </script>
 
 <style>
-    .home {
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .home-container {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         justify-content: center;
-        width: 100%;
+        margin: 0 40 0 40;
     }
+}
+
+@media (min-width: 1200px) {
+    .home-container {
+        margin: 100px 0 100px 0;
+    }
+}
 </style>
