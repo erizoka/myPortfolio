@@ -1,6 +1,7 @@
 <template>
     <div class="resume">
         <h1 class="animate__animated animate__zoomIn animate__fast">Resumo</h1>
+        <ResumeExperience />
         <ResumeFormations />
         <ResumeLanguages />
     </div>
@@ -9,9 +10,10 @@
 <script>
 import ResumeFormations from './SummaryFormations.vue';
 import ResumeLanguages from './SummaryLanguages.vue';
+import ResumeExperience from './SummaryExperience.vue';
 
 export default {
-    components: { ResumeFormations, ResumeLanguages }
+    components: { ResumeFormations, ResumeLanguages, ResumeExperience }
 }
 </script>
 

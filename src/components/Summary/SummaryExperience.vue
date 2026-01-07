@@ -1,25 +1,27 @@
 <template>
-    <h2 class="formacao-title">Formação</h2>
+    <h2 class="formacao-title">Experiência</h2>
     <section class="formacao animate__animated animate__fadeInUp animate__fast">
-        <v-card class="card-container" elevation="7" v-for="r in resume" :key="r">
+        <v-card class="card-container" elevation="7" v-for="e in experience" :key="e">
             <v-card class="card">
-                <v-card-title style="color: #E21E80;">{{ r.date }}</v-card-title>
-                <v-card-text style="font-weight: bold;">{{ r.institution }}</v-card-text>
-                <v-card-subtitle>{{ r.location }}</v-card-subtitle>
-                <v-card-text style="font-style: italic">{{ r.course }}</v-card-text>
+                <v-card-title style="font-weight: bold;">{{ e.company }}</v-card-title>
+                <v-card-subtitle style="white-space: normal;">{{ e.position }}</v-card-subtitle>
+                <img :key="e" :src="e.icon" class="icone" />
             </v-card>
-            <v-card-text class="card-text">{{ r.description }}</v-card-text>
+            <v-card-text class="card-text">{{ e.description }}</v-card-text>
+            <v-chip class="chip">
+                <span style="color: #FFFF;">{{ e.date }}</span>
+            </v-chip>
         </v-card>
     </section>
 </template>
 
 <script>
-import { resume } from './data';
+import { experience } from './data';
 
 export default {
     data() {
         return {
-            resume
+            experience
         }
     }
 }
@@ -62,6 +64,17 @@ export default {
     font-size: larger;
     opacity: 0.8;
     margin-left: 30px;
+}
+
+.chip {
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    background-color: #E21E80;
+}
+
+.icone {
+    width: 100%;
 }
 
 @media (min-width: 1500px) {

@@ -1,4 +1,4 @@
-const resume = [
+export const resume = [
   {
     date: "2023 - Atual",
     institution: "Faculdade Descomplica",
@@ -110,4 +110,13 @@ const resume = [
   },
 ];
 
-export default resume;
+export const experience = [
+  {
+    date: "2025 - Atual",
+    company: "Riocard TI",
+    position: "Assistente de Desenvolvimento de Sistemas",
+    description: `Apoio nas atividades de desenvolvimento de software, sob orientação do líder técnico, a fim de realizar atividades técnicas de menos 
+    complexidade e compreensão técnica, contribuindo para agilidade do trabalho de desenvolvimento de sistemas.`,
+    icon: "https://www.riocardmais.com.br/site/thumbnail/image/441x293/files/fc872722a8d6ac11edbed842010a9e0008/f5cf8f984949611f09f050a58a9feac02/arte-app-riocard-mais-atualizada-v2.png?upscale=1",
+  },
+];
