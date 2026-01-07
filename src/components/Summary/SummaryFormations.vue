@@ -1,5 +1,5 @@
 <template>
-    <h2 class="formacao-title">Formação</h2>
+    <h2 class="formacao-title animate__animated animate__fadeInUp">Formação</h2>
     <section class="formacao animate__animated animate__fadeInUp animate__fast">
         <v-card class="card-container" elevation="7" v-for="r in resume" :key="r">
             <v-card class="card">
