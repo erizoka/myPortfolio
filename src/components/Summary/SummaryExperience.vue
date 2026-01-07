@@ -5,7 +5,7 @@
             <v-card class="card">
                 <v-card-title style="font-weight: bold;">{{ e.company }}</v-card-title>
                 <v-card-subtitle style="white-space: normal;">{{ e.position }}</v-card-subtitle>
-                <img :key="e" :src="e.icon" class="icone" />
+                <img :key="e" :src="e.img" class="icone" />
             </v-card>
             <v-card-text class="card-text">{{ e.description }}</v-card-text>
             <v-chip class="chip">
