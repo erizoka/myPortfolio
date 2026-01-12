@@ -29,8 +29,16 @@
                 <icon :icon="['fab', 'instagram']" style="color: white" />
             </a>
         </div>
+        <HomeAboutLanguages />
     </div>
 </template>
+
+<script>
+import HomeAboutLanguages from './HomeAboutLanguages.vue';
+export default {
+    components: { HomeAboutLanguages }
+}
+</script>
 
 <style scoped>
 .home-about {
@@ -69,7 +77,7 @@
 }
 
 .social {
-    margin-top: 20px;
+    margin: 20px;
 }
 
 .social a {
