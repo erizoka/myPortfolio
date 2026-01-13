@@ -1,6 +1,6 @@
 {
   "name": "my-portfolio",
-  "version": "0.1.0",
+  "version": "1.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
@@ -16,7 +16,7 @@
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@mdi/font": "^7.4.47",
     "animate.css": "^4.1.1",
-    "axios": "^1.7.4",
+    "axios": "^1.7.7",
     "bootstrap": "^5.3.3",
     "bootstrap-vue": "^2.23.1",
     "bootstrap-vue-next": "^0.24.6",
