@@ -5,8 +5,11 @@ import {
   faCode,
   faCommentDots,
   faGraduationCap,
+  faAward,
+  faCircleDown,
+  faCircleUp,
 } from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faFileCode } from "@fortawesome/free-regular-svg-icons";
 import {
   faLinkedin,
   faGithub,
@@ -16,6 +19,10 @@ import {
   faJs,
   faReact,
   faVuejs,
+  faDartLang,
+  faHtml5,
+  faAws,
+  faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
@@ -31,7 +38,15 @@ library.add(
   faReact,
   faVuejs,
   faCommentDots,
-  faGraduationCap
+  faGraduationCap,
+  faAward,
+  faDartLang,
+  faHtml5,
+  faAws,
+  faNodeJs,
+  faFileCode,
+  faCircleDown,
+  faCircleUp
 );
 
 export { FontAwesomeIcon };
