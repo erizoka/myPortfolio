@@ -14,7 +14,7 @@ export const resume = [
     type: "course",
     title: "Java & Spring",
     icon: ["fab", "java"],
-    description: `Desenvolvimento de aplicações robustas no ecossistema Java. Experiência na criação de APIs RESTful escaláveis com Spring Boot, 
+    description: `Desenvolvimento de aplicações robustas no ecossistema Java. Criação de APIs RESTful escaláveis com Spring Boot, 
     processamento de dados em lote com Spring Batch, comunicação em tempo real via WebSockets e integração com bancos de dados relacionais e NoSQL (Redis/MongoDB).`,
     courseList: [
       {

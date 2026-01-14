@@ -1,17 +1,41 @@
 <template>
     <h2 class="formacao-title animate__animated animate__fadeInUp">Formação</h2>
     <section class="formacao animate__animated animate__fadeInUp animate__fast">
-        <v-card class="card-container" elevation="7" v-for="r in resume" :key="r">
-            <v-card class="card">
-                <v-card-title style="font-weight: bold; white-space: normal;">{{ r.institution }}</v-card-title>
-                <v-card-subtitle>{{ r.location }} | {{ r.date }}</v-card-subtitle>
-                <v-card-text style="font-style: italic">{{ r.course }}</v-card-text>
+        <div v-for="(r, i) in resume" :key="i">
+            <v-card class="card-container" elevation="7" v-if="r.type == 'graduation'">
+                <v-card class="card">
+                    <v-card-title style="font-weight: bold; white-space: normal; font-size: 1.2rem; hyphens: none;">
+                        {{ r.course }}
+                    </v-card-title>
+                    <v-card-subtitle style="font-style: italic">{{ r.title }}</v-card-subtitle>
+                    <v-card-text>{{ r.formationType }} | {{ r.date }}</v-card-text>
+                </v-card>
+                <v-card-text class="card-text">{{ r.description }}</v-card-text>
+                <icon class="chip-up" :icon="r.icon" style="color: #E21E80; font-size: 4dvh;" />
             </v-card>
-            <v-card-text class="card-text">{{ r.description }}</v-card-text>
-            <v-chip class="chip" v-if="r.hasIcon">
-                <icon :icon="r.icon" style="color: #FFFF; font-size: 3dvh;" />
-            </v-chip>
-        </v-card>
+
+            <v-card class="card-container with-hover" elevation="7" v-else @click="toggleCard(i)">
+                <v-card class="card">
+                    <v-card-title class="card-title">
+                        <icon :icon="r.icon" />
+                    </v-card-title>
+                    <v-card-subtitle
+                        style="font-size: 2.5dvh; text-align: center; font-weight: bolder; white-space: normal">
+                        {{ r.title }}
+                    </v-card-subtitle>
+                    <v-card-subtitle v-if="r.subtitle != null"
+                        style="white-space: normal; font-size: small; text-align: center;">
+                        {{ r.subtitle }}
+                    </v-card-subtitle>
+                    <v-card-text style="opacity: 80%; text-align: center;">
+                        {{ r.courseList.length }} curso(s) com {{ getCargaHorasTotal(r.courseList) }}h.
+                    </v-card-text>
+                </v-card>
+                <v-card-text class="card-text">{{ r.description }}</v-card-text>
+                <icon class="chip-down" :icon="['fas', openCard === i ? 'circle-up' : 'circle-down']"
+                    style="color: #E21E80; font-size: 3.5dvh;" />
+            </v-card>
+        </div>
     </section>
 </template>
 
@@ -21,9 +45,20 @@ import { resume } from './data';
 export default {
     data() {
         return {
-            resume
+            resume,
+            openCard: null,
+            certificationIcon: ["fas", "award"],
         }
-    }
+    },
+    methods: {
+        getCargaHorasTotal(cursos) {
+            if (!cursos) return 0;
+            return cursos.reduce((acc, curso) => acc + (curso.ch || 0), 0);
+        },
+        toggleCard(index) {
+            this.openCard = this.openCard === index ? null : index;
+        }
+    },
 }
 </script>
 
@@ -66,11 +101,30 @@ export default {
     margin-left: 30px;
 }
 
-.chip {
+.chip-up {
     position: absolute;
     right: 2%;
     top: 5%;
-    background-color: #E21E80;
+}
+
+.chip-down {
+    position: absolute;
+    right: 2%;
+    bottom: 5%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 8dvh;
+    font-weight: bolder;
+    color: white;
+    background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+}
+
+.with-hover:hover {
+    cursor: pointer;
+    transition: transform .7s cubic-bezier(0, 0, 0, 1);
+    transform: scale(1.07);
 }
 
 @media (min-width: 1500px) {
