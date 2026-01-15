@@ -29,7 +29,7 @@
                 <icon :icon="['fab', 'instagram']" style="color: white" />
             </a>
         </div>
-        <HomeAboutLanguages />
+        <HomeAboutLanguages style="margin-top: 20px;" />
     </div>
 </template>
 
