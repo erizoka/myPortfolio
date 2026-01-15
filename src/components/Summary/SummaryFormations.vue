@@ -14,27 +14,44 @@
                 <icon class="chip-up" :icon="r.icon" style="color: #E21E80; font-size: 4dvh;" />
             </v-card>
 
-            <v-card class="card-container with-hover" elevation="7" v-else @click="toggleCard(i)">
-                <v-card class="card">
-                    <v-card-title class="card-title">
-                        <icon :icon="r.icon" />
-                    </v-card-title>
-                    <v-card-subtitle
-                        style="font-size: 2.5dvh; text-align: center; font-weight: bolder; white-space: normal">
-                        {{ r.title }}
-                    </v-card-subtitle>
-                    <v-card-subtitle v-if="r.subtitle != null"
-                        style="white-space: normal; font-size: small; text-align: center;">
-                        {{ r.subtitle }}
-                    </v-card-subtitle>
-                    <v-card-text style="opacity: 80%; text-align: center;">
-                        {{ r.courseList.length }} curso(s) com {{ getCargaHorasTotal(r.courseList) }}h.
-                    </v-card-text>
-                </v-card>
-                <v-card-text class="card-text">{{ r.description }}</v-card-text>
-                <icon class="chip-down" :icon="['fas', openCard === i ? 'circle-up' : 'circle-down']"
-                    style="color: #E21E80; font-size: 3.5dvh;" />
-            </v-card>
+            <v-menu location="bottom" v-else>
+                <template v-slot:activator="{ props }">
+                    <v-card v-bind="props" class="card-container"
+                        :class="props['aria-expanded'] === 'true' ? '' : 'with-hover'" elevation="7">
+                        <v-card class="card">
+                            <v-card-title class="card-title">
+                                <icon :icon="r.icon" />
+                            </v-card-title>
+                            <v-card-subtitle
+                                style="font-size: 1.2rem; text-align: center; font-weight: bolder; white-space: normal">
+                                {{ r.title }}
+                            </v-card-subtitle>
+                            <v-card-subtitle v-if="r.subtitle != null"
+                                style="white-space: normal; font-size: small; text-align: center;">
+                                {{ r.subtitle }}
+                            </v-card-subtitle>
+                            <v-card-text style="opacity: 80%; text-align: center;">
+                                {{ r.courseList.length }} curso(s) com {{ getCargaHorasTotal(r.courseList) }}h.
+                            </v-card-text>
+                        </v-card>
+                        <v-card-text class="card-text">{{ r.description }}</v-card-text>
+                        <icon class="chip-down"
+                            :icon="['fas', props['aria-expanded'] === 'true' ? 'circle-up' : 'circle-down']"
+                            style="color: #E21E80; font-size: 3.5dvh;" />
+                    </v-card>
+                </template>
+
+                <v-list v-for="(c, i) in r.courseList" :key="i" :value="i" style="margin: 0.5px;">
+                    <div class="d-flex align-center justify-space-between" style="min-width: 250px;">
+                        <span class="pl-4">{{ c.name }}</span>
+
+                        <v-btn v-if="c.certificationLink" :href="c.certificationLink" target="_blank" icon
+                            variant="text" density="comfortable">
+                            <icon :icon="certificationIcon" style="color: gold; font-size: 1.5rem;" />
+                        </v-btn>
+                    </div>
+                </v-list>
+            </v-menu>
         </div>
     </section>
 </template>
@@ -55,9 +72,6 @@ export default {
             if (!cursos) return 0;
             return cursos.reduce((acc, curso) => acc + (curso.ch || 0), 0);
         },
-        toggleCard(index) {
-            this.openCard = this.openCard === index ? null : index;
-        }
     },
 }
 </script>
@@ -115,7 +129,7 @@ export default {
 
 .card-title {
     text-align: center;
-    font-size: 8dvh;
+    font-size: 4rem;
     font-weight: bolder;
     color: white;
     background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
