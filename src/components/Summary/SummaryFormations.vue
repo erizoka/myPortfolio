@@ -42,13 +42,12 @@
                 </template>
 
                 <v-list v-for="(c, i) in r.courseList" :key="i" :value="i" style="margin: 0.5px;">
-                    <div class="d-flex align-center justify-space-between" style="min-width: 250px;">
+                    <div class="d-flex align-center justify-space-between" style="min-width: 250px; padding: 8px;">
                         <span class="pl-4">{{ c.name }}</span>
 
-                        <v-btn v-if="c.certificationLink" :href="c.certificationLink" target="_blank" icon
-                            variant="text" density="comfortable">
-                            <icon :icon="certificationIcon" style="color: gold; font-size: 1.5rem;" />
-                        </v-btn>
+                        <a :href="c.certificationLink" target="_blank" class="holographic-btn">
+                            <icon :icon="certificationIcon" class="cert-icon" />
+                        </a>
                     </div>
                 </v-list>
             </v-menu>
@@ -139,6 +138,56 @@ export default {
     cursor: pointer;
     transition: transform .7s cubic-bezier(0, 0, 0, 1);
     transform: scale(1.07);
+}
+
+.holographic-btn {
+    position: absolute;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 1;
+}
+
+.cert-icon {
+    color: gold;
+    font-size: 1.8rem;
+    position: relative;
+    z-index: 2;
+}
+
+.cert-icon:hover {
+    background-color: rgba(255, 217, 0, 0.123);
+}
+
+.holographic-btn::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg,
+            transparent,
+            transparent 30%,
+            rgba(255, 215, 0, 0.3));
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.holographic-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.3);
+}
+
+.holographic-btn:hover::before {
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
 }
 
 @media (min-width: 1500px) {
