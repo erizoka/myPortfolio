@@ -21,7 +21,7 @@ const projectsData = [
     title: "XPTO Manager",
     description: `Protótipo de Backoffice feito em Java com Spring Boot e Spring Batch para backend - ao criar usuário são disparados dois jobs.
     VueJs para o frontend com uso de axios, vuex e vue-cookies com interface inspirada em um template Figma. Projeto de uma empresa fictícia com objetivo de gerenciar clientes
-    e usuários, com Dashboard de stats usando gerenciamento de estado`,
+    e usuários, com Dashboard de stats usando gerenciamento de estado.`,
     thumbImg: require("@/assets/projects-gallery/xpto-manager/thumb.png"),
     alt: "Imagem index do Projeto",
     git: "https://github.com/erizoka/xpto-manager",
@@ -40,7 +40,7 @@ const projectsData = [
     Projeto FullStack para gerenciamento de eventos - frontend web usando Next.js, 
     backend usando Nest.js com Prisma e 
     mobile usando React Native com Expo CLI e um 
-    Core com regras de negócio somente em Typescript
+    Core com regras de negócio somente em Typescript.
     `,
     thumbImg: require("@/assets/projects-gallery/convite-digital/thumbweb.png"),
     alt: "Imagem index do Projeto",
@@ -64,7 +64,7 @@ const projectsData = [
     backend usando Nest.js com Prisma e 
     mobile usando React Native com Expo CLI, e um 
     Core com regras de negócio somente em Typescript
-    onde os eventos são adicionados via QRCode pelo admin
+    onde os eventos são adicionados via QRCode pelo admin.
     `,
     thumbImg: require("@/assets/projects-gallery/convite-digital/thumbmobile.png"),
     alt: "Imagem da tela inicial",
@@ -113,7 +113,7 @@ const projectsData = [
     title: "Golden Pizza - Mobile",
     description: `Aplicativo de inclusão de pedido por mesa, integrado ao sistema de gerenciamento web, 
         onde ao ser finalizado um pedido o envio para o gerenciador é imediato. 
-        Projeito feito em React, com framework Expo`,
+        Projeito feito em React, com framework Expo.`,
     thumbImg: require("@/assets/projects-gallery/golden-pizza-mobile/thumb-gp-mobile.png"),
     alt: "Imagem do login pelo app",
     git: "https://github.com/erizoka/Golden-Pizzaria",
@@ -180,7 +180,7 @@ const projectsData = [
   {
     title: "Calculator",
     description: `Calculadora simples desenvolvida em Fluttar | Dart com operações básicas como soma, subtração, multiplicação e divisão
-    e interface simples e intuitiva e um layout inspirado na calculadora padrão da Apple`,
+    e interface simples e intuitiva e um layout inspirado na calculadora padrão da Apple.`,
     thumbImg: require("@/assets/projects-gallery/calculator/thumb.png"),
     alt: "Imagem de calculadora",
     git: "https://github.com/erizoka/calculator",

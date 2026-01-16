@@ -105,12 +105,18 @@ export default {
 
 @media (max-width: 768px) {
     .card {
-        width: 100%;
+        width: 95%;
     }
 
     .card .icon {
-        font-size: small;
+        font-size: smaller;
         padding: 5px;
+        margin-left: 15px;
+    }
+
+    .card-items {
+        justify-content: space-between;
+        font-size: 0.9rem;
     }
 }
 </style>

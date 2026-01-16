@@ -231,5 +231,15 @@ export default {
         margin: 5px 0;
         font-size: medium;
     }
+
+    .chip-up,
+    .chip-down {
+        right: 6%;
+    }
+
+    span {
+        margin-right: 30px;
+        margin-left: 5px;
+    }
 }
 </style>

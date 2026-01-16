@@ -6,7 +6,7 @@
                 :key="project">
                 <v-parallax :src="project.thumbImg" height="inherit">
                     <v-card-title>{{ project.title }}</v-card-title>
-                    <v-card-text>{{ project.description }}</v-card-text>
+                    <v-card-text class="card-description">{{ project.description }}</v-card-text>
                     <v-card-actions>
                         <v-btn @click="showModal(project)" color="#FFF" variant="tonal" class="ml-4 elevation-20">
                             Galeria
@@ -124,6 +124,11 @@ export default {
 
     .pcard {
         height: 310px;
+    }
+
+    .card-description {
+        height: 63%;
+        overflow: scroll;
     }
 }
 </style>
