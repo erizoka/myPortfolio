@@ -46,7 +46,7 @@
                         <span class="pl-4">{{ c.name }}</span>
 
                         <a :href="c.certificationLink" target="_blank" class="holographic-btn">
-                            <icon :icon="certificationIcon" class="cert-icon" />
+                            <icon :icon="c.isYoutube ? youtubeIcon : certificationIcon" class="cert-icon" />
                         </a>
                     </div>
                 </v-list>
@@ -64,6 +64,7 @@ export default {
             resume,
             openCard: null,
             certificationIcon: ["fas", "award"],
+            youtubeIcon: ["fab", "youtube"],
         }
     },
     methods: {

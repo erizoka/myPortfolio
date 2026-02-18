@@ -54,13 +54,19 @@ export const resume = [
     title: "Dart & Flutter",
     icon: ["fab", "flutter"],
     description: `Criação de aplicativos nativos multiplataforma (iOS e Android) com Flutter. 
-    Implementação de funcionalidades avançadas como geolocalização (Google Maps), uso de hardware (câmera), autenticação e design responsivo.`,
+    Implementação de funcionalidades avançadas como geolocalização (Google Maps), uso de hardware (câmera), autenticação integrando com backend e design responsivo.`,
     courseList: [
       {
         name: "Aprenda Flutter e Desenvolva Apps Para Android e IOS",
         ch: 60,
         certificationLink:
           "https://www.udemy.com/certificate/UC-884acb58-ae71-4d78-a12b-c3b85efd17f0/",
+      },
+      {
+        name: "Crie um App de Quitanda Virtual com Flutter + GetX",
+        ch: 24.5,
+        certificationLink:
+          "https://www.udemy.com/certificate/UC-6ddd6839-25c5-4a64-bdb2-2551d0fc6aa3/",
       },
     ],
   },
@@ -145,6 +151,21 @@ export const resume = [
         ch: 7,
         certificationLink:
           "https://udemy-certificate.s3.amazonaws.com/pdf/UC-6abca541-b264-4108-a2c8-939b13b917bc.pdf",
+      },
+    ],
+  },
+  {
+    type: "course",
+    title: "DBA & SQL",
+    icon: ["fas", "database"],
+    description: `Fundamento de SQL e arquitetura de banco de dados relacionais e não relacionaisModelagem e gerenciamento de bancos de dados relacionais, 
+    com foco em estruturação eficiente, integridade de dados e otimização de consultas complexas através da linguagem SQL. .`,
+    courseList: [
+      {
+        name: "Curso SQL Completo 2025 [Iniciantes] + Desafios + Muita Prática",
+        ch: 3.5,
+        isYoutube: true,
+        certificationLink: "https://www.youtube.com/watch?v=G7bMwefn8RQ",
       },
     ],
   },

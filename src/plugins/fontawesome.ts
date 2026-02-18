@@ -8,6 +8,7 @@ import {
   faAward,
   faCircleDown,
   faCircleUp,
+  faDatabase,
 } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faFileCode } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -23,6 +24,7 @@ import {
   faHtml5,
   faAws,
   faNodeJs,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
@@ -46,7 +48,9 @@ library.add(
   faNodeJs,
   faFileCode,
   faCircleDown,
-  faCircleUp
+  faCircleUp,
+  faDatabase,
+  faYoutube,
 );
 
 export { FontAwesomeIcon };
