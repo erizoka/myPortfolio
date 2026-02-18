@@ -4318,7 +4318,7 @@ multicast-dns@^7.2.5:
     thunky "^1.0.2"
 
 "my-portfolio@file:":
-  version "1.2.0"
+  version "2.3.0"
   resolved "file:"
   dependencies:
     "@fortawesome/fontawesome-svg-core" "^6.6.0"

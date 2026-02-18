@@ -2,8 +2,8 @@ const projectsData = [
   {
     title: "Marvel Comics",
     description: `Um app em Flutter que consome a API da Marvel para explorar personagens, quadrinhos, eventos e mais.
-       Você pode pesquisar, visualizar detalhes e favoritar seus conteúdos preferidos. Adicionado funcionalidades como pesquisa dinâmica por personagens e quadrinhos,
-       carrosséis, os favoritos são salvos em memória, além de um layout responsivo.`,
+    Você pode pesquisar, visualizar detalhes e favoritar seus conteúdos preferidos. Adicionado funcionalidades como pesquisa dinâmica por personagens e quadrinhos,
+    carrosséis, os favoritos são salvos em memória, além de um layout responsivo.`,
     thumbImg: require("@/assets/projects-gallery/marvel-comics/thumb.png"),
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/marvel-comics-api",
@@ -15,6 +15,26 @@ const projectsData = [
       img5: require("@/assets/projects-gallery/marvel-comics/detail-character.png"),
       img6: require("@/assets/projects-gallery/marvel-comics/detail-comic.png"),
       img7: require("@/assets/projects-gallery/marvel-comics/favorites.png"),
+    },
+  },
+  {
+    title: "Greengrocer",
+    description: `Um aplicativo de hortifruti completo desenvolvido em Flutter com GetX, permitindo que os usuários naveguem por categorias de produtos, 
+    gerenciem seu carrinho de compras e realizem pedidos com acompanhamento em tempo real.`,
+    thumbImg: require("@/assets/projects-gallery/greengrocer/thumb.png"),
+    alt: "Tela da home do app",
+    git: "https://github.com/erizoka/greengrocer",
+    carousel: {
+      img1: require("@/assets/projects-gallery/greengrocer/tela-login.png"),
+      img2: require("@/assets/projects-gallery/greengrocer/tela-cadastro.png"),
+      img3: require("@/assets/projects-gallery/greengrocer/tela-home.png"),
+      img4: require("@/assets/projects-gallery/greengrocer/pesquisa.gif"),
+      img5: require("@/assets/projects-gallery/greengrocer/navegacao-detalhes.gif"),
+      img6: require("@/assets/projects-gallery/greengrocer/adiciona-carrinho-home.gif"),
+      img7: require("@/assets/projects-gallery/greengrocer/tela-carrinho.png"),
+      img8: require("@/assets/projects-gallery/greengrocer/tela-pedidos-1.png"),
+      img9: require("@/assets/projects-gallery/greengrocer/tela-pedidos-2.png"),
+      img10: require("@/assets/projects-gallery/greengrocer/tela-perfil.png"),
     },
   },
   {
