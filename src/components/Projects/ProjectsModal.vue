@@ -1,12 +1,17 @@
 <template>
   <div class="modal" @click.self="closeModal">
-    <div class="animate__animated animate__zoomIn animate__faster" role="dialog">
-      <div v-if="isMobile" class="exit-container">
+    <div class="dialog-wrap animate__animated animate__zoomIn animate__faster" role="dialog">
+      <div v-if="isMobileDevice" class="exit-container">
         <button class="exit" @click="closeModal">x</button>
       </div>
-      <v-carousel :show-arrows="!isMobile ? 'hover' : undefined" height="auto" hide-delimiter-background color="purple">
+      <v-carousel :show-arrows="!isMobileDevice ? 'hover' : true" :height="isMobileDevice ? '80vh' : 'auto'" hide-delimiter-background cycle
+        color="purple">
         <v-carousel-item v-for="(image, index) in project.carousel" :key="index">
-          <img class="carousel-img" :src="image" :alt="`Imagem ${index + 1} do projeto ${project.title}`">
+          <div :class="project.isMobile ? 'mobile-gallery-wrapper' : 'web-to-mobile-container'">
+            <img class="carousel-img"
+              :class="(isMobileDevice && project.isMobile == undefined) ? 'carousel-img-rotate' : null" :src="image"
+              :alt="`Imagem ${index + 1} do projeto ${project.title}`">
+          </div>
         </v-carousel-item>
       </v-carousel>
     </div>
@@ -24,7 +29,7 @@ export default {
   },
   data() {
     return {
-      isMobile: false,
+      isMobileDevice: false,
     }
   },
   methods: {
@@ -38,7 +43,7 @@ export default {
     },
 
     checkWindowSize() {
-      if (window.innerWidth <= 768) this.isMobile = true;
+      if (window.innerWidth <= 768) this.isMobileDevice = true;
     },
   },
   mounted() {
@@ -65,33 +70,78 @@ export default {
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
+  box-sizing: border-box;
+}
+
+.mobile-gallery-wrapper {
+  padding: 0 70px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web-to-mobile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
 }
 
 .carousel-img {
-  height: 500px;
+  height: 90vh;
   width: fit-content;
+}
+
+.mobile-gallery-wrapper .carousel-img {
+  max-height: 90vh;
+  width: auto;
+  object-fit: contain;
+}
+
+.carousel-img-rotate {
+  transform: rotate(90deg);
+  width: 80vh !important;
+  height: 100vw !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .exit-container {
   display: flex;
   justify-content: end;
   margin-bottom: 5px;
+  margin-right: 20px;
 }
 
 .exit {
-  color: white;
-  font-size: 20px;
+  background-color: white;
+  color: black;
+  font-size: 25px;
+  border-radius: 50%;
+  height: 45px;
+  width: 45px;
 }
 
 @media (max-width: 768px) {
   .modal {
     padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .dialog-wrap {
+    width: 100%;
+    max-width: 100%;
   }
 
   .carousel-img {
     height: fit-content;
-    max-height: 600px;
-    width: 100%;
+    width: 70vw;
+    object-fit: contain;
   }
 }
 </style>

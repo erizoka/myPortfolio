@@ -7,6 +7,7 @@ const projectsData = [
     thumbImg: require("@/assets/projects-gallery/marvel-comics/thumb.png"),
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/marvel-comics-api",
+    isMobile: true,
     carousel: {
       img1: require("@/assets/projects-gallery/marvel-comics/splash.gif"),
       img2: require("@/assets/projects-gallery/marvel-comics/home.png"),
@@ -24,6 +25,7 @@ const projectsData = [
     thumbImg: require("@/assets/projects-gallery/greengrocer/thumb.png"),
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/greengrocer",
+    isMobile: true,
     carousel: {
       img1: require("@/assets/projects-gallery/greengrocer/tela-login.png"),
       img2: require("@/assets/projects-gallery/greengrocer/tela-cadastro.png"),
@@ -89,6 +91,7 @@ const projectsData = [
     thumbImg: require("@/assets/projects-gallery/convite-digital/thumbmobile.png"),
     alt: "Imagem da tela inicial",
     git: "https://github.com/erizoka/convit3-digital",
+    isMobile: true,
     carousel: {
       img1: require("@/assets/projects-gallery/convite-digital/mobile-1.png"),
       img2: require("@/assets/projects-gallery/convite-digital/mobile-2.png"),
@@ -137,6 +140,7 @@ const projectsData = [
     thumbImg: require("@/assets/projects-gallery/golden-pizza-mobile/thumb-gp-mobile.png"),
     alt: "Imagem do login pelo app",
     git: "https://github.com/erizoka/Golden-Pizzaria",
+    isMobile: true,
     carousel: {
       img1: require("@/assets/projects-gallery/golden-pizza-mobile/login.jpg"),
       img2: require("@/assets/projects-gallery/golden-pizza-mobile/novo-pedido.jpg"),
@@ -204,6 +208,7 @@ const projectsData = [
     thumbImg: require("@/assets/projects-gallery/calculator/thumb.png"),
     alt: "Imagem de calculadora",
     git: "https://github.com/erizoka/calculator",
+    isMobile: true,
     carousel: {
       img1: require("@/assets/projects-gallery/calculator/print-1.png"),
       img2: require("@/assets/projects-gallery/calculator/usage.gif"),
@@ -216,6 +221,7 @@ const projectsData = [
     thumbImg: require("@/assets/projects-gallery/campo-minado/thumb.png"),
     alt: "Imagem de calculadora",
     git: "https://github.com/erizoka/campo_minado",
+    isMobile: true,
     carousel: {
       img1: require("@/assets/projects-gallery/campo-minado/print-1.png"),
       img2: require("@/assets/projects-gallery/campo-minado/print-2.png"),
@@ -260,6 +266,7 @@ const projectsData = [
     thumbImg: require("@/assets/projects-gallery/pomodoro/thumb.png"),
     alt: "Imagem do projeto",
     git: "https://github.com/erizoka/pomodoro",
+    isMobile: true,
     carousel: {
       img1: require("@/assets/projects-gallery/pomodoro/print-1.png"),
       img2: require("@/assets/projects-gallery/pomodoro/print-2.png"),
