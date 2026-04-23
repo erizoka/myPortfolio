@@ -7,14 +7,19 @@
                 <v-parallax :src="project.thumbImg" height="inherit">
                     <v-card-title>{{ project.title }}</v-card-title>
                     <v-card-text>{{ project.description }}</v-card-text>
-                    <v-card-actions>
-                        <v-btn @click="showModal(project)" color="#FFF" variant="tonal" class="ml-4 elevation-20">
-                            Galeria
+                    <v-card-actions style="justify-content: space-between;">
+                        <v-card-actions>
+                            <v-btn @click="showModal(project)" color="#FFF" variant="tonal" class="ml-4 elevation-20">
+                                Galeria
+                            </v-btn>
+                            <v-chip :href="project.git" target="_blank" class="elevation-20" variant="flat">
+                                <span>Git</span>
+                                <icon :icon="['fab', 'github']" class="icon" />
+                            </v-chip>
+                        </v-card-actions>
+                        <v-btn v-if="project.hasDownload" :href="project.downloadPath" :download="project.download">
+                            <icon :icon="['fas', 'download']" class="icon" color="#FFFF" style="font-size: 1.5rem;" />
                         </v-btn>
-                        <v-chip :href="project.git" target="_blank" class="elevation-20" variant="flat">
-                            <span>Git</span>
-                            <icon :icon="['fab', 'github']" class="icon" />
-                        </v-chip>
                     </v-card-actions>
                 </v-parallax>
             </v-card>
