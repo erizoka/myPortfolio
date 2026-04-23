@@ -28,7 +28,7 @@ const projectsData = [
     isMobile: true,
     hasDownload: true,
     download: "HigherOrLower.apk",
-    downloadPath: "/downloads/higher-or-lower.apk",
+    downloadPath: "downloads/higher-or-lower.apk",
     carousel: {
       img1: require("@/assets/projects-gallery/higher-or-lower/splash.gif"),
       img2: require("@/assets/projects-gallery/higher-or-lower/home.png"),
@@ -229,7 +229,7 @@ const projectsData = [
     isMobile: true,
     hasDownload: true,
     download: "Calculator.apk",
-    downloadPath: "/downloads/calculator.apk",
+    downloadPath: "downloads/calculator.apk",
     carousel: {
       img1: require("@/assets/projects-gallery/calculator/print-1.png"),
       img2: require("@/assets/projects-gallery/calculator/usage.gif"),
@@ -245,7 +245,7 @@ const projectsData = [
     isMobile: true,
     hasDownload: true,
     download: "CampoMinado.apk",
-    downloadPath: "/downloads/campo-minado.apk",
+    downloadPath: "downloads/campo-minado.apk",
     carousel: {
       img1: require("@/assets/projects-gallery/campo-minado/print-1.png"),
       img2: require("@/assets/projects-gallery/campo-minado/print-2.png"),
@@ -293,7 +293,7 @@ const projectsData = [
     isMobile: true,
     hasDownload: true,
     download: "Pomodoro.apk",
-    downloadPath: "/downloads/pomodoro.apk",
+    downloadPath: "downloads/pomodoro.apk",
     carousel: {
       img1: require("@/assets/projects-gallery/pomodoro/print-1.png"),
       img2: require("@/assets/projects-gallery/pomodoro/print-2.png"),
