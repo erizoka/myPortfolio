@@ -17,7 +17,8 @@
                                 <icon :icon="['fab', 'github']" class="icon" />
                             </v-chip>
                         </v-card-actions>
-                        <v-btn v-if="project.hasDownload" :href="project.downloadPath" :download="project.download">
+                        <v-btn v-if="project.hasDownload" :href="publicPath + project.downloadPath"
+                            :download="project.download">
                             <icon :icon="['fas', 'download']" class="icon" color="#FFFF" style="font-size: 1.5rem;" />
                         </v-btn>
                     </v-card-actions>
@@ -40,6 +41,7 @@ export default {
             projectsData,
             isModalVisible: false,
             selectedProject: null,
+            publicPath: process.env.BASE_URL
         }
     },
     methods: {
