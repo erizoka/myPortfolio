@@ -44,6 +44,9 @@ const projectsData = [
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/greengrocer",
     isMobile: true,
+    hasDownload: true,
+    download: "Greengrocer.apk",
+    downloadPath: "downloads/greengrocer.apk",
     carousel: {
       img1: require("@/assets/projects-gallery/greengrocer/tela-login.png"),
       img2: require("@/assets/projects-gallery/greengrocer/tela-cadastro.png"),
