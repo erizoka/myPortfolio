@@ -25,9 +25,9 @@ export default {
             languages: [
                 { name: 'Java', icon: { type: 'fa', value: ['fab', 'java'] } },
                 { name: 'Spring Boot', icon: { type: 'svg', value: SpringBoot } },
-                { name: 'Vue JS', icon: { type: 'fa', value: ['fab', 'vuejs'] } },
                 { name: 'Flutter', icon: { type: 'fa', value: ['fab', 'flutter'] } },
                 { name: 'Dart', icon: { type: 'svg', value: Dart } },
+                { name: 'Vue JS', icon: { type: 'fa', value: ['fab', 'vuejs'] } },
                 { name: 'Typescript', icon: { type: 'svg', value: TypeScript } },
                 { name: 'React JS', icon: { type: 'fa', value: ['fab', 'react'] } },
                 { name: 'JavaScript', icon: { type: 'fa', value: ['fab', 'js'] } },
