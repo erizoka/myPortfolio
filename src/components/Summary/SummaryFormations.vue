@@ -110,7 +110,7 @@ export default {
 }
 
 .card-text {
-    font-size: larger;
+    font-size: clamp(0.7rem, 0.9rem, 1rem);
     opacity: 0.8;
     margin-left: 30px;
 }
@@ -206,10 +206,6 @@ export default {
         padding: 30px;
         margin: 20px;
         height: 280px;
-    }
-
-    .card-text {
-        font-size: large;
     }
 }
 
