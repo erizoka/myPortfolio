@@ -97,10 +97,10 @@ export default {
 }
 
 .v-card-text {
-    margin-top: 15px;
     word-break: keep-all;
     color: #FFF;
     height: 50%;
+    font-size: clamp(0.6rem, 0.8rem, 1rem);
 }
 
 .icon {
