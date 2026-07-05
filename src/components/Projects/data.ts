@@ -1,9 +1,12 @@
+//TODO melhorar as descrições dos cards
 const projectsData = [
   {
     title: "Marvel Comics",
-    description: `Um app em Flutter que consome a API da Marvel para explorar personagens, quadrinhos, eventos e mais.
-    Você pode pesquisar, visualizar detalhes e favoritar seus conteúdos preferidos. Adicionado funcionalidades como pesquisa dinâmica por personagens e quadrinhos,
-    carrosséis, os favoritos são salvos em memória, além de um layout responsivo.`,
+    description: `Aplicação mobile construída em Flutter para exploração do universo Marvel 
+    através do consumo de sua API oficial REST. O projeto implementa arquitetura modular, 
+    busca dinâmica e indexada de personagens, quadrinhos e eventos, gerenciamento de estado 
+    para persistência local de dados favoritos e uma interface responsiva baseada em 
+    carrosséis fluidos e componentes customizados de UI/UX.`,
     thumbImg: require("@/assets/projects-gallery/marvel-comics/thumb.png"),
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/marvel-comics-api",
@@ -20,8 +23,12 @@ const projectsData = [
   },
   {
     title: "Higher or Lower",
-    description: `Jogo de cartas dinâmico desenvolvido com Flutter e GetX. Utiliza a Deck of Cards API para simular baralhos reais,
-     contando com animações 3D imersivas, sistema de recordes (streaks) e uma interface moderna baseada em Material 3.`,
+    description: `Jogo de cartas dinâmico desenvolvido em Flutter utilizando o 
+    ecossistema GetX para gerenciamento de estado e injeção de dependências. 
+    O projeto realiza o consumo assíncrono da Deck of Cards API para simulação e 
+    manipulação de baralhos reais em tempo de execução, integrando animações fluidas 
+    de interface, persistência local para controle de recordes (streaks) e design 
+    system fundamentado nas diretrizes do Material 3.`,
     thumbImg: require("@/assets/projects-gallery/higher-or-lower/thumb.png"),
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/higher-or-lower",
@@ -38,8 +45,11 @@ const projectsData = [
   },
   {
     title: "Greengrocer",
-    description: `Um aplicativo de hortifruti completo desenvolvido em Flutter com GetX, permitindo que os usuários naveguem por categorias de produtos, 
-    gerenciem seu carrinho de compras e realizem pedidos com acompanhamento em tempo real.`,
+    description: `Plataforma de e-commerce voltada para hortifrúti desenvolvida em Flutter 
+    com arquitetura baseada no GetX para gerência de estado e rotas. A aplicação engloba 
+    fluxos completos de navegação indexada por categorias de produtos, gerenciamento 
+    dinâmico de carrinho de compras em memória, processamento de checkout e um sistema 
+    estruturado para acompanhamento e atualização do status de pedidos em tempo real.`,
     thumbImg: require("@/assets/projects-gallery/greengrocer/thumb.png"),
     alt: "Tela da home do app",
     git: "https://github.com/erizoka/greengrocer",
@@ -62,9 +72,12 @@ const projectsData = [
   },
   {
     title: "XPTO Manager",
-    description: `Protótipo de Backoffice feito em Java com Spring Boot e Spring Batch para backend - ao criar usuário são disparados dois jobs.
-    VueJs para o frontend com uso de axios, vuex e vue-cookies com interface inspirada em um template Figma. Projeto de uma empresa fictícia com objetivo de gerenciar clientes
-    e usuários, com Dashboard de stats usando gerenciamento de estado.`,
+    description: `Protótipo de sistema backoffice corporativo baseado em uma arquitetura 
+    desacoplada. O backend utiliza Java com Spring Boot e implementa processamento em lote 
+    via Spring Batch para a execução automatizada de jobs assíncronos no ciclo de vida 
+    do usuário. O frontend é estruturado em Vue.js com Axios para consumo de APIs, Vuex 
+    para gerência de estado centralizada e controle de sessões via cookies, apresentando 
+    uma interface fidelizada a partir de prototipagem no Figma e dashboard dinâmico de indicadores.`,
     thumbImg: require("@/assets/projects-gallery/xpto-manager/thumb.png"),
     alt: "Imagem index do Projeto",
     git: "https://github.com/erizoka/xpto-manager",
@@ -80,10 +93,11 @@ const projectsData = [
   {
     title: "Convit3 Digital - Web",
     description: `
-    Projeto FullStack para gerenciamento de eventos - frontend web usando Next.js, 
-    backend usando Nest.js com Prisma e 
-    mobile usando React Native com Expo CLI e um 
-    Core com regras de negócio somente em Typescript.
+    Vertente web de uma plataforma Full Stack voltada para o gerenciamento de eventos, 
+    estruturada sob o ecossistema TypeScript. O ecossistema compreende uma interface 
+    web responsiva e dinâmica desenvolvida em Next.js e um backend escalável em Nest.js 
+    integrado ao ORM Prisma, utilizando um pacote Core isolado que centraliza e 
+    compartilha de forma pura todas as regras de negócio e validações arquiteturais.
     `,
     thumbImg: require("@/assets/projects-gallery/convite-digital/thumbweb.png"),
     alt: "Imagem index do Projeto",
@@ -103,11 +117,11 @@ const projectsData = [
   {
     title: "Convit3 Digital - Mobile",
     description: `
-    Projeto FullStack para gerenciamento de eventos - frontend web usando Next.js, 
-    backend usando Nest.js com Prisma e 
-    mobile usando React Native com Expo CLI, e um 
-    Core com regras de negócio somente em Typescript
-    onde os eventos são adicionados via QRCode pelo admin.
+    Vertente mobile da plataforma de gerenciamento de eventos, construída com React Native 
+    e Expo CLI para entrega multiplataforma. A aplicação consome um backend em 
+    Nest.js/Prisma e integra-se ao pacote Core compartilhado em TypeScript puro, 
+    destacando-se pela implementação de recursos nativos para leitura e validação 
+    instantânea de acessos a eventos via câmera com QRCode.
     `,
     thumbImg: require("@/assets/projects-gallery/convite-digital/thumbmobile.png"),
     alt: "Imagem da tela inicial",
@@ -123,9 +137,12 @@ const projectsData = [
   },
   {
     title: "gitChess",
-    description: `Sistema de Jogo de Xadrez com lógia de Piece e Board distribuído em cores
-        para rodar diretamente pelo
-        terminal do GitBash, jogadas especiais e regras de jogo implantadas, projeto feito em linguagem Java.`,
+    description: `Sistema de xadrez baseado em CLI desenvolvido em Java, aplicando 
+    conceitos avançados de Programação Orientada a Objetos (POO) para a modelagem e 
+    gerenciamento do tabuleiro e das peças. O projeto roda diretamente no terminal, 
+    contando com renderização customizada em cores (ANSI), validação estrita de 
+    movimentos possíveis, tratamento de exceções customizadas do domínio e implementação 
+    de regras e jogadas especiais do xadrez, como Roque, En Passant e Promoção.`,
     thumbImg: require("@/assets/projects-gallery/gitChess/thumb-gitchess.png"),
     alt: "Imagem do jogo de Xadrez pelo GitBash",
     git: "https://github.com/erizoka/chess-system-java/",
@@ -139,9 +156,11 @@ const projectsData = [
   },
   {
     title: "Golden Pizza - Web",
-    description: `Sistema de gerenciamento de pedido de uma pizzaria (fictícia), 
-        implantado sistema de autenticação e integração com app para cadastro dos pedidos pelo garçom. 
-        Projeito feito em linguagem NodeJS, TypeScript e React.`,
+    description: `Vertente web de um ecossistema de automação comercial para pizzarias, 
+    desenvolvido em Node.js, TypeScript e React. A plataforma atua como o painel 
+    administrativo centralizador, integrando fluxos de autenticação segura, controle 
+    de sessões e um dashboard operacional para gerenciamento, triagem e monitoramento 
+    dos pedidos enviados em tempo real pelos dispositivos móveis.`,
     thumbImg: require("@/assets/projects-gallery/golden-pizza-desktop/thumb-gp-desktop.png"),
     alt: "Preview da página de login",
     git: "https://github.com/erizoka/Golden-Pizzaria",
@@ -155,9 +174,11 @@ const projectsData = [
   },
   {
     title: "Golden Pizza - Mobile",
-    description: `Aplicativo de inclusão de pedido por mesa, integrado ao sistema de gerenciamento web, 
-        onde ao ser finalizado um pedido o envio para o gerenciador é imediato. 
-        Projeito feito em React, com framework Expo.`,
+    description: `Vertente mobile voltada para a operação de atendimento em salão, 
+    construída em React Native com a infraestrutura do Expo. O aplicativo funciona 
+    de forma integrada ao ecossistema web, permitindo que a equipe de garçons realize 
+    a abertura de mesas, inclusão dinâmica de itens e o fechamento de comandas com 
+    sincronização assíncrona e envio imediato de dados para a cozinha.`,
     thumbImg: require("@/assets/projects-gallery/golden-pizza-mobile/thumb-gp-mobile.png"),
     alt: "Imagem do login pelo app",
     git: "https://github.com/erizoka/Golden-Pizzaria",
@@ -172,9 +193,11 @@ const projectsData = [
   },
   {
     title: "plann.er",
-    description: `Planejador de viagem usando React, Vite, Tailwind e Typescript, com gerenciamento de atividades por dia e horário 
-        e armazenamento de links externos. Convidados recebem notificação por email e é possível verificar 
-        o aceite nos detalhes da viagem. Projeto feito em evento da RocketSeat, somente frontend.`,
+    description: `Aplicação de planejamento e gestão de viagens desenvolvida em React, 
+    Vite e TypeScript, com estilização utilitária via TailwindCSS. O frontend implementa 
+    fluxos complexos para gerenciamento cronológico de atividades com controle de dia 
+    e horário, repositório estruturado para links e anexos externos, e um painel de 
+    controle de convidados com indicadores visuais sobre o status de confirmação e aceite de presença.`,
     thumbImg: require("@/assets/projects-gallery/trip-planner/thumb.png"),
     alt: "Tela inicial do Planejador de viagem",
     git: "https://github.com/erizoka/trip-planner",
@@ -189,10 +212,13 @@ const projectsData = [
   },
   {
     title: "Knowlegde",
-    description: `Base de conhecimento - projeto feito no curso Vue 2 da C3der, onde os administradores cadastram
-        artigos, categorias e usuários. Somente usuários cadastrados podem acessar,
-        tela inicial mostra o dashboard da visão geral e categorias no menu lateral. Backend em JavaScript, 
-        Knex e Node v12, frontend com Vue 2, Vue Router, Vuex e BootstrapVue.`,
+    description: `Plataforma Full Stack de base de conhecimento desenvolvida com o 
+    ecossistema Vue 2 no frontend e Node.js integrado ao query builder Knex no backend. 
+    Com um controle estrito de autenticação e autorização, disponibilizando 
+    módulos administrativos para o gerenciamento completo de artigos, 
+    usuários e categorias. A interface gráfica utiliza Vuex para gerência de estado 
+    centralizada, Vue Router para navegação e componentes responsivos 
+    do BootstrapVue para a renderização de dashboards de métricas e menus dinâmicos.`,
     thumbImg: require("@/assets/projects-gallery/knowlegde/thumb.png"),
     alt: "Tela de dashboard",
     git: "https://github.com/erizoka/knowledge",
@@ -208,10 +234,12 @@ const projectsData = [
   },
   {
     title: "Sônia Biscuit",
-    description: `Meu primeiro projeto foi também um portfolio para outra pessoa, 
-        que faz artesanato. Um projeto
-        originalmente com foco em HTML e CSS feito em 2019, porém fiz a
-        inclusão de um swiper em js na home para fotos em destaque.`,
+    description: `Website institucional e portfólio digital desenvolvido para 
+    exibição de produtos artesanais. O projeto foca na estruturação semântica 
+    em HTML5 e estilização em CSS3 nativo, integrando a biblioteca SwiperJS 
+    para a implementação de carrosséis responsivos e dinâmicos de imagens 
+    em destaque na página principal, priorizando a fidelidade visual e a 
+    otimização de carregamento dos elementos de mídia.`,
     thumbImg: require("@/assets/projects-gallery/sonia/thumb-sonia.png"),
     alt: "Imagem do site projeto Sônia Biscuit",
     git: null,
@@ -224,8 +252,11 @@ const projectsData = [
   },
   {
     title: "Calculator",
-    description: `Calculadora simples desenvolvida em Fluttar | Dart com operações básicas como soma, subtração, multiplicação e divisão
-    e interface simples e intuitiva e um layout inspirado na calculadora padrão da Apple.`,
+    description: `Aplicação utilitária de calculadora desenvolvida em Flutter e 
+    Dart para execução de operações matemáticas fundamentais. O projeto foca no 
+    processamento e validação de expressões aritméticas em tempo real, apresentando 
+    uma interface minimalista e intuitiva com design system e transições visuais 
+    inspirados na interface padrão de sistemas iOS.`,
     thumbImg: require("@/assets/projects-gallery/calculator/thumb.png"),
     alt: "Imagem de calculadora",
     git: "https://github.com/erizoka/calculator",
@@ -240,8 +271,12 @@ const projectsData = [
   },
   {
     title: "Campo Minado",
-    description: `Clássico jogo de Campo Minado desenvolvido em Flutter | Dart com interface estilo retrô, 
-    com as regras clássicas de toque em um campo para revelá-lo evitando as minas e marcando campos suspeitos.`,
+    description: `Recriação do clássico jogo de estratégia lógica desenvolvido em Flutter 
+    e Dart. O projeto implementa uma matriz dinâmica de blocos interconectados, 
+    englobando algoritmos de varredura recursiva para a revelação de áreas seguras, 
+    cálculo em tempo real da proximidade de minas, controle de estados para marcação 
+    de bandeiras e tratamento de eventos de toque (curto e longo) sob uma interface 
+    fiel ao estilo retrô.`,
     thumbImg: require("@/assets/projects-gallery/campo-minado/thumb.png"),
     alt: "Imagem de calculadora",
     git: "https://github.com/erizoka/campo_minado",
@@ -258,10 +293,12 @@ const projectsData = [
   },
   {
     title: "STOCKTrader",
-    description: `Simulador de compra de ações em VueJS ver 2 com Vuex onde o usuário tem um saldo inicial e 
-        pode comprar e vender ações a qualquer momento. Ao selecionar finalizar o dia, 
-        é gerado um novo valor de todas as ações
-        disponível e os dados anteriores carregam com o uso do localStorage para armazenamento em cache.`,
+    description: `Simulador financeiro de compra e venda de ações desenvolvido no 
+    ecossistema Vue.js 2 com gerenciamento de estado via Vuex. A aplicação computa 
+    transações de ativos em tempo real com base em um saldo dinâmico, implementando 
+    um algoritmo para flutuação e geração randômica de preços a cada fechamento de 
+    ciclo diário, além de integrar o localStorage para cache de dados e
+     persistência do progresso da sessão do usuário.`,
     thumbImg: require("@/assets/projects-gallery/strock-trader/thumb.png"),
     alt: "Página inicial do simulador de compra e venda de ações",
     git: "https://github.com/erizoka/stock-trader",
@@ -274,9 +311,12 @@ const projectsData = [
   },
   {
     title: "Film Flix",
-    description: `Projeto feito em JavaScript puro com css sem uso de framework, usando de forma experimental a API externa developer.themoviedb.org
-         página exibe as 20 produções em alta no cinema e streaming, podendo abrir os detalhes exibindo a descrição e o trailer, quando disponível,
-         e adicionando à lista de favoritos.`,
+    description: `Aplicação web desenvolvida em JavaScript Vanilla (puro) e 
+    CSS nativo para exploração de produções audiovisuais. O projeto realiza 
+    o consumo assíncrono da API REST do The Movie Database (TMDB) para listar 
+    e renderizar dinamicamente os títulos em alta, manipulando diretamente a 
+    árvore do DOM para exibição de metadados detalhados, integração com players 
+    de trailers externos e gerenciamento de uma lista local de favoritos em memória.`,
     thumbImg: require("@/assets/projects-gallery/film-flix/thumb.png"),
     alt: "Página inicial exibindo filmes em alta",
     git: "https://github.com/erizoka/filmflix-project",
@@ -288,8 +328,11 @@ const projectsData = [
   },
   {
     title: "Pomodoro",
-    description: `Um timer com a técnica Pomodoro desenvolvido em Flutter | Dart com controle de temporizador com opção de pausa e reset em uma
-    interface simples e intuitiva.`,
+    description: `Aplicativo de produtividade baseado na metodologia Pomodoro, 
+    desenvolvido em Flutter e Dart. O projeto implementa motores de temporização 
+    e controle preciso de loops assíncronos para gerenciar ciclos de foco e descanso, 
+    fornecendo recursos para pausa, reinicialização e manipulação do estado do timer 
+    através de uma interface de usuário minimalista e intuitiva.`,
     thumbImg: require("@/assets/projects-gallery/pomodoro/thumb.png"),
     alt: "Imagem do projeto",
     git: "https://github.com/erizoka/pomodoro",
