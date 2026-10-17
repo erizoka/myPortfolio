@@ -23,7 +23,7 @@ export const resume = [
         name: "API REST do 0 à AWS c. Spring Boot framework Java e Docker",
         ch: 32,
         certificationLink:
-          "https://udemy-certificate.s3.amazonaws.com/pdf/UC-7cf19cc4-ce5a-411e-8617-a44ea6ee42d6.pdf",
+          "https://www.udemy.com/certificate/UC-7cf19cc4-ce5a-411e-8617-a44ea6ee42d6/",
       },
       {
         name: "Comunicação em Tempo Real com Spring Boot, WebSocket e Redis",
@@ -35,13 +35,19 @@ export const resume = [
         name: "Desenvolvimento de jobs com Spring Batch",
         ch: 7,
         certificationLink:
-          "https://udemy-certificate.s3.amazonaws.com/pdf/UC-03dba346-fa84-47e5-831b-1faad33b2b29.pdf",
+          "https://www.udemy.com/certificate/UC-03dba346-fa84-47e5-831b-1faad33b2b29/",
       },
       {
         name: "Java - Programação Orientada a Objetos",
         ch: 54.5,
         certificationLink:
           "https://www.udemy.com/certificate/UC-29bd9537-26ec-47d4-a94e-dc05fe069523/",
+      },
+      {
+        name: "Master Microservices with Spring Boot and Spring Cloud",
+        ch: 23,
+        certificationLink:
+          "https://www.udemy.com/certificate/UC-29ad0af8-ebc9-410b-b38c-fc6c6b4e457a/",
       },
       {
         name: "NLW Connect - Aplicação backend Java com Maven, Spring boot e API Rest",
@@ -85,7 +91,7 @@ export const resume = [
         name: "Vue JS 3 Completo com Composition API, Vuex & Vue Router",
         ch: 8.5,
         certificationLink:
-          "https://udemy-certificate.s3.amazonaws.com/pdf/UC-0d328052-b8e3-4cf8-986d-0f9eb9a27746.pdf",
+          "https://www.udemy.com/certificate/UC-0d328052-b8e3-4cf8-986d-0f9eb9a27746/",
       },
       {
         name: "Curso Vue JS 2 - O Guia Completo",
@@ -158,19 +164,25 @@ export const resume = [
         name: "Computação em Nuvem (Cloud Computing): Essencial",
         ch: 7,
         certificationLink:
-          "https://udemy-certificate.s3.amazonaws.com/pdf/UC-1288b179-a425-4194-81e3-176d3f5282f8.pdf",
+          "https://www.udemy.com/certificate/UC-1288b179-a425-4194-81e3-176d3f5282f8/",
       },
       {
         name: "AWS para Iniciantes - Aprenda e Domine a nuvem Amazon",
         ch: 7,
         certificationLink:
-          "https://udemy-certificate.s3.amazonaws.com/pdf/UC-6abca541-b264-4108-a2c8-939b13b917bc.pdf",
+          "https://www.udemy.com/certificate/UC-6abca541-b264-4108-a2c8-939b13b917bc/",
       },
       {
         name: "Argo CD Essential Guide for End Users with Practice",
         ch: 5,
         certificationLink:
-          "https://udemy-certificate.s3.amazonaws.com/pdf/UC-79e34bb4-eece-4991-9ca4-97d42b5b9b95.pdf",
+          "https://www.udemy.com/certificate/UC-79e34bb4-eece-4991-9ca4-97d42b5b9b95/",
+      },
+      {
+        name: "Grafana: Dashboards Gerenciais + Monitoramento",
+        ch: 2.5,
+        certificationLink:
+          "https://www.udemy.com/certificate/UC-73fd8b16-5679-493f-862c-d42f045694c0/",
       },
     ],
   },
@@ -191,31 +203,48 @@ export const resume = [
         name: "Banco de Dados Oracle Completo 2026: SQL+PLSQL+Modelagem",
         ch: 32,
         certificationLink:
-          "https://udemy-certificate.s3.amazonaws.com/pdf/UC-100a4da6-8b3a-44a5-b960-841a749c982e.pdf",
+          "https://www.udemy.com/certificate/UC-100a4da6-8b3a-44a5-b960-841a749c982e/",
       },
     ],
   },
-  // {
-  //   type: "course",
-  //   title: "Testing & QA",
-  //   icon: ["fas", "fa-flask"],
-  //   description: `Foco em garantia de qualidade de software através de automação e execução de testes.
-  //   O aprendizado envolve a criação e estruturação de testes unitários utilizando o ecossistema JUnit 5,
-  //   validação de fluxos de código, asserções, testes parametrizados e a integração de
-  //   ferramentas de versionamento voltadas para o fluxo de trabalho de controle de qualidade.`,
-  //   courseList: [
-  //     {
-  //       name: "Testes unitários com JUnit 5",
-  //       ch: 14,
-  //       certificationLink: "",
-  //     },
-  //     // {
-  //     //   name: "Curso de Git Para Testers",
-  //     //   ch: 1,
-  //     //   certificationLink: "",
-  //     // },
-  //   ],
-  // },
+  {
+    type: "course",
+    title: "Testing & QA",
+    icon: ["fas", "fa-flask"],
+    description: `Foco em garantia de qualidade de software através de automação e execução de testes.
+    O aprendizado envolve a criação e estruturação de testes unitários utilizando o ecossistema JUnit 5,
+    validação de fluxos de código, asserções, testes parametrizados e a integração de
+    ferramentas de versionamento voltadas para o fluxo de trabalho de controle de qualidade.`,
+    courseList: [
+      {
+        name: "Testes unitários com JUnit 5",
+        ch: 14,
+        certificationLink:
+          "https://www.udemy.com/certificate/UC-441b5a8b-6c02-411b-9700-339bc6c8e80c/",
+      },
+      // {
+      //   name: "Curso de Git Para Testers",
+      //   ch: 1,
+      //   certificationLink: "",
+      // },
+    ],
+  },
+  {
+    type: "course",
+    title: "AI & Prompt Engineering",
+    icon: ["fas", "robot"],
+    description: `Integração de Inteligência Artificial ao ecossistema de desenvolvimento. Aplicação de técnicas avançadas de Engenharia de Prompt 
+    para interações otimizadas com LLMs (Large Language Models), automação de rotinas, geração e refatoração de código, 
+    além da exploração de ferramentas baseadas em IA generativa para a construção de soluções inovadoras e aumento de produtividade.`,
+    courseList: [
+      {
+        name: "Engenharia de Prompts com IA Completo (2026)",
+        ch: 5,
+        certificationLink:
+          "https://www.udemy.com/certificate/UC-e4b9cc75-9512-43a9-949e-44c09599067e/",
+      },
+    ],
+  },
   {
     type: "course",
     title: "Fundamentals & Logic",

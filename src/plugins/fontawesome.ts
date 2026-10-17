@@ -11,6 +11,7 @@ import {
   faDatabase,
   faFlask,
   faDownload,
+  faRobot,
 } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope, faFileCode } from "@fortawesome/free-regular-svg-icons";
 import {
@@ -57,6 +58,7 @@ library.add(
   faJsfiddle,
   faFlask,
   faDownload,
+  faRobot,
 );
 
 export { FontAwesomeIcon };
